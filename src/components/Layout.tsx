@@ -20,7 +20,7 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
               to="/" 
               className="text-2xl font-serif font-semibold tracking-tight hover:opacity-60 transition-opacity"
             >
-              Your Name
+              Garv Khurana
             </Link>
             
             <ul className="flex gap-8">
@@ -52,15 +52,15 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
       <footer className="border-t border-border mt-32">
         <div className="max-w-4xl mx-auto px-6 py-12">
           <div className="flex justify-between items-center text-sm text-muted-foreground">
-            <p>© 2025 Your Name</p>
+            <p>© 2025 Garv Khurana</p>
             <div className="flex gap-6">
-              <a href="mailto:your@email.com" className="hover:text-foreground transition-colors">
+              <a href="mailto:khurana.garv@gmail.com" className="hover:text-foreground transition-colors">
                 Email
               </a>
-              <a href="https://twitter.com" className="hover:text-foreground transition-colors">
-                Twitter
+              <a href="mailto:projects@garvkhurana.tech" className="hover:text-foreground transition-colors">
+                Projects
               </a>
-              <a href="https://linkedin.com" className="hover:text-foreground transition-colors">
+              <a href="https://linkedin.com/in/garvkhurana" className="hover:text-foreground transition-colors">
                 LinkedIn
               </a>
             </div>
