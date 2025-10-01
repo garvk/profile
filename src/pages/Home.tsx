@@ -6,14 +6,15 @@ const Home = () => {
     <div className="space-y-24">
       {/* Hero */}
       <section className="pt-12 pb-16 border-b border-border">
-        <h1 className="text-5xl md:text-6xl font-serif font-semibold leading-tight mb-6">
-          Thoughts on design,
+        <h1 className="text-5xl md:text-6xl font-serif font-semibold leading-tight mb-8">
+          DeFi, Risk, and
           <br />
-          technology, and craft
+          AI Systems
         </h1>
-        <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl">
-          I write about digital product design, emerging technologies, and the intersection
-          of creativity and systems thinking. This is my space for essays, projects, and notes.
+        <p className="text-xl text-muted-foreground leading-relaxed max-w-3xl">
+          I work at the intersection of decentralized finance, risk management, and artificial intelligence. 
+          Currently building multi-agentic AI platforms at Fractal.ai and exploring how LLMs can transform 
+          traditional actuarial and financial systems.
         </p>
       </section>
 
@@ -27,19 +28,19 @@ const Home = () => {
         <div className="space-y-8">
           {[
             {
-              title: "On the nature of good design systems",
-              date: "March 2025",
-              excerpt: "Design systems are not just component libraries—they're living agreements about how we build together.",
+              title: "Building Multi-Agentic Systems for Enterprise",
+              date: "Coming Soon",
+              excerpt: "Lessons from architecting cogentiq, a production-grade multi-agent platform serving enterprise clients.",
             },
             {
-              title: "Technology as a medium for thought",
-              date: "February 2025",
-              excerpt: "The tools we use shape the thoughts we can think. A reflection on computational media.",
+              title: "Risk Frameworks in DeFi",
+              date: "Coming Soon",
+              excerpt: "How traditional actuarial science applies to decentralized finance protocols, and where it breaks down.",
             },
             {
-              title: "Why simplicity is so complex",
-              date: "January 2025",
-              excerpt: "True simplicity comes from understanding complexity deeply enough to hide it effectively.",
+              title: "From RAG to Production",
+              date: "Coming Soon",
+              excerpt: "A practitioner's guide to building, comparing, and deploying retrieval-augmented generation pipelines at scale.",
             },
           ].map((essay) => (
             <article key={essay.title} className="group border-l-2 border-line-subtle hover:border-foreground transition-colors pl-6 py-2">
@@ -82,14 +83,24 @@ const Home = () => {
         <div className="grid md:grid-cols-2 gap-8">
           {[
             {
-              title: "Design System Architecture",
-              type: "Framework",
-              description: "A scalable approach to building and maintaining design systems for growing teams.",
+              title: "cogentiq",
+              type: "Active • Lead Architect",
+              description: "Multi-agentic AI platform at Fractal.ai enabling enterprise AI solutions. Building the foundation for sophisticated AI-powered workflows.",
             },
             {
-              title: "Minimal CMS",
-              type: "Product",
-              description: "Content management stripped to its essence. Built for writers, not marketers.",
+              title: "aggrag",
+              type: "Active • Author",
+              description: "Framework to configure, run, compare, and deploy multiple RAG pipelines. Unified experiment-to-production stack for retrieval systems.",
+            },
+            {
+              title: "Euler Risk Framework",
+              type: "Archived • Risk Consultant",
+              description: "Comprehensive risk management framework for DeFi lending protocols. Security research and protocol monitoring tools.",
+            },
+            {
+              title: "UniswapV3 Simulator",
+              type: "Archived • Research",
+              description: "Offline simulation tool and cost of attack analysis for DeFi protocols. Economic security modeling and risk assessment.",
             },
           ].map((project) => (
             <article key={project.title} className="group border border-border p-6 hover:border-foreground transition-colors">
