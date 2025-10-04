@@ -14,8 +14,9 @@ export default {
     },
     extend: {
       fontFamily: {
-        serif: ['Lora', 'Georgia', 'Garamond', 'serif'],
-        sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+        mono: ['IBM Plex Mono', 'Courier New', 'monospace'],
+        sans: ['IBM Plex Mono', 'Courier New', 'monospace'],
+        serif: ['IBM Plex Mono', 'Courier New', 'monospace'],
       },
       colors: {
         border: "hsl(var(--border))",
