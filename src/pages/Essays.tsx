@@ -41,43 +41,46 @@ const Essays = () => {
   return (
     <div className="space-y-16">
       <section>
-        <h1 className="text-5xl font-serif font-semibold mb-6 pb-6 border-b border-border">
-          Essays
-        </h1>
+        <div className="line-decoration mb-8">
+          <h1 className="text-4xl font-serif font-semibold">
+            Writing
+          </h1>
+        </div>
         <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl">
-          Long-form writing on design, technology, and the craft of building digital products.
+          Long-form essays on design, technology, risk, and how we build better systems. 
+          Each piece aims for depth over breadth — slow, considered thinking.
         </p>
       </section>
 
-      <section className="space-y-12">
+      <section className="space-y-16">
         {essays.map((essay, index) => (
           <article 
             key={essay.title}
-            className="group border-l-2 border-line-subtle hover:border-foreground transition-colors pl-8 py-4"
+            className="group pb-12 border-b border-border last:border-0"
           >
-            <div className="flex items-baseline gap-4 mb-2">
-              <time className="text-xs uppercase tracking-wider text-muted-foreground">
+            <div className="flex items-baseline gap-4 mb-3">
+              <time className="font-sans text-xs uppercase tracking-wider text-muted-foreground">
                 {essay.date}
               </time>
               <span className="text-xs text-muted-foreground">·</span>
-              <span className="text-xs text-muted-foreground">{essay.readTime} read</span>
+              <span className="font-sans text-xs tracking-wider text-muted-foreground">{essay.readTime} read</span>
             </div>
             
-            <h2 className="text-2xl font-serif font-semibold mt-3 mb-4 group-hover:opacity-60 transition-opacity cursor-pointer">
+            <h2 className="text-2xl font-serif font-semibold mb-4 group-hover:opacity-60 transition-opacity cursor-pointer leading-tight">
               {essay.title}
             </h2>
             
-            <p className="text-muted-foreground leading-relaxed">
+            <p className="text-muted-foreground leading-relaxed max-w-2xl">
               {essay.excerpt}
             </p>
           </article>
         ))}
       </section>
 
-      <section className="pt-12 border-t border-border">
-        <p className="text-sm text-muted-foreground">
-          Looking for something specific? Essays are organized chronologically. 
-          Older posts are archived and available upon request.
+      <section className="pt-8">
+        <p className="text-sm text-muted-foreground leading-relaxed">
+          Essays are organized chronologically. Older pieces are archived and available on request. 
+          If something here resonates with you, I'd enjoy hearing your thoughts.
         </p>
       </section>
     </div>

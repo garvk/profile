@@ -8,46 +8,48 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Greyscale palette - pure black and white with subtle greys */
+    /* Greyscale palette - pure monochrome with subtle hierarchy */
     --background: 0 0% 100%;
-    --foreground: 0 0% 10%;
+    --foreground: 0 0% 5%;
 
     --card: 0 0% 100%;
-    --card-foreground: 0 0% 10%;
+    --card-foreground: 0 0% 5%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 10%;
+    --popover-foreground: 0 0% 5%;
 
-    /* Primary: Deep charcoal for emphasis */
-    --primary: 0 0% 10%;
+    /* Primary: Pure black for emphasis */
+    --primary: 0 0% 5%;
     --primary-foreground: 0 0% 98%;
 
-    /* Secondary: Light grey for subtle backgrounds */
-    --secondary: 0 0% 96%;
-    --secondary-foreground: 0 0% 10%;
+    /* Secondary: Subtle grey for backgrounds */
+    --secondary: 0 0% 97%;
+    --secondary-foreground: 0 0% 5%;
 
-    /* Muted: Mid-grey for less important text */
-    --muted: 0 0% 96%;
-    --muted-foreground: 0 0% 45%;
+    /* Muted: Mid-grey for secondary text */
+    --muted: 0 0% 97%;
+    --muted-foreground: 0 0% 50%;
 
-    /* Accent: Slightly darker grey for hover states */
-    --accent: 0 0% 94%;
-    --accent-foreground: 0 0% 10%;
+    /* Accent: Light grey for hover states */
+    --accent: 0 0% 95%;
+    --accent-foreground: 0 0% 5%;
 
-    --destructive: 0 0% 20%;
+    --destructive: 0 0% 15%;
     --destructive-foreground: 0 0% 98%;
 
-    /* Borders: Very light grey, subtle but visible */
-    --border: 0 0% 90%;
-    --input: 0 0% 90%;
-    --ring: 0 0% 20%;
+    /* Borders: Thin, precise lines */
+    --border: 0 0% 88%;
+    --border-strong: 0 0% 15%;
+    --input: 0 0% 88%;
+    --ring: 0 0% 15%;
 
     --radius: 0rem;
 
-    /* Custom tokens for editorial design */
-    --line-subtle: 0 0% 85%;
-    --line-strong: 0 0% 20%;
-    --transition-smooth: all 0.2s ease;
+    /* Custom tokens for editorial, grid-based design */
+    --line-thin: 1px;
+    --line-medium: 2px;
+    --spacing-grid: 8px;
+    --transition-smooth: all 0.15s ease;
   }
 }
 
@@ -57,32 +59,52 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground font-serif antialiased;
-    font-feature-settings: "kern" 1, "liga" 1;
-    font-size: 18px;
-    line-height: 1.7;
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Lora', Georgia, serif;
+    font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
+    font-size: 17px;
+    line-height: 1.75;
+    letter-spacing: 0.01em;
   }
 
   h1, h2, h3, h4, h5, h6 {
     @apply font-serif;
     font-weight: 600;
-    letter-spacing: -0.01em;
-    line-height: 1.3;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+  }
+  
+  p {
+    margin-bottom: 1.25em;
   }
 }
 
 @layer utilities {
+  .line-frame {
+    border: var(--line-thin) solid hsl(var(--border));
+  }
+  
+  .line-frame-strong {
+    border: var(--line-medium) solid hsl(var(--border-strong));
+  }
+  
   .line-decoration {
     position: relative;
+    padding-left: 3rem;
   }
   
   .line-decoration::before {
     content: '';
     position: absolute;
     left: 0;
-    top: 0;
+    top: 0.5em;
     width: 2rem;
-    height: 1px;
-    background: hsl(var(--line-strong));
+    height: var(--line-thin);
+    background: hsl(var(--border-strong));
+  }
+  
+  .grid-base {
+    display: grid;
+    gap: calc(var(--spacing-grid) * 2);
   }
 }

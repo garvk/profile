@@ -55,27 +55,28 @@ const Notes = () => {
   return (
     <div className="space-y-16">
       <section>
-        <h1 className="text-5xl font-serif font-semibold mb-6 pb-6 border-b border-border">
-          Notes
-        </h1>
+        <div className="line-decoration mb-8">
+          <h1 className="text-4xl font-serif font-semibold">
+            Notes
+          </h1>
+        </div>
         <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl">
           Brief observations, reading notes, and ideas in progress. Less polished than essays, 
-          more considered than tweets.
+          more spontaneous than formal writing. Public thinking.
         </p>
       </section>
 
-      <section className="space-y-8">
+      <section className="space-y-1">
         {notes.map((note, index) => (
           <article 
             key={note.title}
             className="group py-6 border-b border-border last:border-0"
           >
             <div className="flex items-baseline gap-4 mb-3">
-              <h2 className="text-lg font-serif font-semibold group-hover:opacity-60 transition-opacity">
+              <h2 className="text-lg font-serif font-semibold group-hover:opacity-60 transition-opacity flex-grow">
                 {note.title}
               </h2>
-              <span className="text-xs text-muted-foreground">·</span>
-              <time className="text-xs text-muted-foreground">
+              <time className="font-sans text-xs text-muted-foreground tracking-wider whitespace-nowrap">
                 {note.date}
               </time>
             </div>
@@ -88,9 +89,9 @@ const Notes = () => {
       </section>
 
       <section className="pt-8">
-        <p className="text-sm text-muted-foreground">
-          These notes are unfiltered thoughts and work-in-progress ideas. Some may evolve into 
-          full essays, others remain as fragments. All are public thinking.
+        <p className="text-sm text-muted-foreground leading-relaxed">
+          These are unfiltered thoughts — some will evolve into full essays, others will remain 
+          as fragments. All are meant to be shared, discussed, and refined through conversation.
         </p>
       </section>
     </div>

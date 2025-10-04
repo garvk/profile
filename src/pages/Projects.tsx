@@ -114,75 +114,73 @@ const Projects = () => {
   return (
     <div className="space-y-16">
       <section>
-        <h1 className="text-5xl font-serif font-semibold mb-8 pb-6 border-b border-border">
-          Projects
-        </h1>
+        <div className="line-decoration mb-8">
+          <h1 className="text-4xl font-serif font-semibold">
+            Work
+          </h1>
+        </div>
         <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl">
-          Selected work spanning DeFi protocol design, AI systems architecture, risk management frameworks, 
+          Selected projects spanning DeFi protocol design, AI systems architecture, risk management frameworks, 
           and algorithmic trading. From early arbitrage systems to enterprise multi-agent platforms.
         </p>
       </section>
 
-      <section className="space-y-12">
+      <section className="space-y-8">
         {projects.map((project, index) => (
           <article 
             key={project.title}
-            className="group"
+            className="line-frame p-8 hover:border-strong transition-colors group"
           >
-            <div className="border border-border p-8 hover:border-foreground transition-colors">
-              <div className="flex items-start justify-between mb-5 flex-wrap gap-4">
-                <div className="flex items-baseline gap-4 flex-wrap">
-                  <span className="text-xs uppercase tracking-wider text-muted-foreground">
-                    {project.role}
-                  </span>
-                  <span className="text-xs text-muted-foreground">·</span>
-                  <span className="text-xs text-muted-foreground">{project.year}</span>
-                  <span className="text-xs text-muted-foreground">·</span>
-                  <span className="text-xs">{project.status}</span>
-                </div>
+            <div className="flex items-baseline justify-between mb-4 flex-wrap gap-4">
+              <div className="flex items-baseline gap-4 flex-wrap font-sans text-xs text-muted-foreground">
+                <span className="uppercase tracking-wider">{project.role}</span>
+                <span>·</span>
+                <span className="tracking-wider">{project.year}</span>
+                <span>·</span>
+                <span>{project.status}</span>
               </div>
+            </div>
 
-              <h2 className="text-3xl font-serif font-semibold mb-4 group-hover:opacity-60 transition-opacity">
-                {project.link ? (
-                  <a href={project.link} target="_blank" rel="noopener noreferrer" className="border-b border-transparent hover:border-foreground">
-                    {project.title}
-                  </a>
-                ) : (
-                  project.title
-                )}
-              </h2>
-
-              <p className="text-muted-foreground leading-relaxed mb-6 text-base">
-                {project.description}
-              </p>
-
-              {project.collaborator && (
-                <p className="text-sm text-muted-foreground mb-6">
-                  <span className="text-foreground">Collaborator:</span> {project.collaborator}
-                </p>
+            <h2 className="text-2xl font-serif font-semibold mb-4 group-hover:opacity-60 transition-opacity">
+              {project.link ? (
+                <a href={project.link} target="_blank" rel="noopener noreferrer" className="hover:underline">
+                  {project.title}
+                </a>
+              ) : (
+                project.title
               )}
+            </h2>
 
-              <div className="flex flex-wrap gap-3">
-                {project.tags.map((tag) => (
-                  <span 
-                    key={tag}
-                    className="text-xs px-3 py-1.5 border border-border font-medium"
-                  >
-                    {tag}
-                  </span>
-                ))}
-              </div>
+            <p className="text-muted-foreground leading-relaxed mb-6">
+              {project.description}
+            </p>
+
+            {project.collaborator && (
+              <p className="text-sm text-muted-foreground mb-6">
+                <span className="text-foreground font-medium">Collaborator:</span> {project.collaborator}
+              </p>
+            )}
+
+            <div className="flex flex-wrap gap-3">
+              {project.tags.map((tag) => (
+                <span 
+                  key={tag}
+                  className="font-sans text-xs tracking-wider uppercase text-muted-foreground"
+                >
+                  {tag}
+                </span>
+              ))}
             </div>
           </article>
         ))}
       </section>
 
-      <section className="pt-12 border-t border-border">
+      <section className="pt-8 border-t border-border">
         <div className="text-muted-foreground leading-relaxed space-y-4">
           <p>
             For detailed case studies, technical documentation, or collaboration inquiries, 
             reach out via{" "}
-            <a href="mailto:projects@garvkhurana.tech" className="text-foreground border-b border-foreground hover:opacity-60 transition-opacity">
+            <a href="mailto:projects@garvkhurana.tech" className="text-foreground underline hover:opacity-60 transition-opacity">
               projects@garvkhurana.tech
             </a>
           </p>
