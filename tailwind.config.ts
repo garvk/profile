@@ -15,7 +15,7 @@ export default {
     extend: {
       fontFamily: {
         serif: ['Lora', 'Georgia', 'Garamond', 'serif'],
-        sans: ['Lora', 'Georgia', 'serif'],
+        sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -51,10 +51,7 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        line: {
-          subtle: "hsl(var(--line-subtle))",
-          strong: "hsl(var(--line-strong))",
-        },
+        "border-strong": "hsl(var(--border-strong))",
       },
       borderRadius: {
         lg: "var(--radius)",

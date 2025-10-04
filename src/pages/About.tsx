@@ -2,12 +2,14 @@ const About = () => {
   return (
     <div className="space-y-16">
       <section>
-        <h1 className="text-5xl font-serif font-semibold mb-12 pb-6 border-b border-border">
-          About
-        </h1>
+        <div className="line-decoration mb-8">
+          <h1 className="text-4xl font-serif font-semibold">
+            About
+          </h1>
+        </div>
         
-        <div className="space-y-8 max-w-none">
-          <p className="text-xl leading-relaxed">
+        <div className="space-y-8 max-w-2xl">
+          <p className="text-xl font-serif leading-relaxed">
             I'm Garv Khurana, working at the intersection of decentralized finance, 
             risk management, and artificial intelligence.
           </p>
@@ -27,43 +29,47 @@ const About = () => {
       </section>
 
       <section className="pt-12 border-t border-border">
-        <h2 className="text-3xl font-serif font-semibold mb-10">Currently</h2>
+        <div className="line-decoration mb-10">
+          <h2 className="font-sans text-xs uppercase tracking-widest text-muted-foreground font-medium">
+            Currently
+          </h2>
+        </div>
         
-        <div className="space-y-8 text-muted-foreground">
-          <div className="flex gap-6 border-l-2 border-line-subtle pl-6">
-            <span className="text-foreground font-medium min-w-40">cogentiq</span>
-            <span className="leading-relaxed">
+        <div className="space-y-6 text-muted-foreground max-w-2xl">
+          <div className="flex gap-8 pb-6 border-b border-border">
+            <span className="text-foreground font-sans text-xs uppercase tracking-wider font-medium min-w-32">cogentiq</span>
+            <span className="leading-relaxed flex-1">
               Lead Architect at Fractal.ai building multi-agentic platform for enterprise AI solutions. 
-              <a href="https://cogentiq.fractal.ai" className="text-foreground border-b border-foreground hover:opacity-60 transition-opacity ml-1">
+              <a href="https://cogentiq.fractal.ai" className="text-foreground underline hover:opacity-60 transition-opacity ml-1">
                 cogentiq.fractal.ai
               </a>
             </span>
           </div>
           
-          <div className="flex gap-6 border-l-2 border-line-subtle pl-6">
-            <span className="text-foreground font-medium min-w-40">Underwriting Risk</span>
-            <span className="leading-relaxed">
+          <div className="flex gap-8 pb-6 border-b border-border">
+            <span className="text-foreground font-sans text-xs uppercase tracking-wider font-medium min-w-32">Underwriting</span>
+            <span className="leading-relaxed flex-1">
               Lead Tech and Product Owner for AI-powered underwriting risk assessment platform built on cogentiq
             </span>
           </div>
           
-          <div className="flex gap-6 border-l-2 border-line-subtle pl-6">
-            <span className="text-foreground font-medium min-w-40">insightsin5</span>
-            <span className="leading-relaxed">
+          <div className="flex gap-8 pb-6 border-b border-border">
+            <span className="text-foreground font-sans text-xs uppercase tracking-wider font-medium min-w-32">insightsin5</span>
+            <span className="leading-relaxed flex-1">
               Building AI assistant for Shopify store owners to derive actionable business insights
             </span>
           </div>
 
-          <div className="flex gap-6 border-l-2 border-line-subtle pl-6">
-            <span className="text-foreground font-medium min-w-40">aggrag</span>
-            <span className="leading-relaxed">
+          <div className="flex gap-8 pb-6 border-b border-border">
+            <span className="text-foreground font-sans text-xs uppercase tracking-wider font-medium min-w-32">aggrag</span>
+            <span className="leading-relaxed flex-1">
               Authored framework to configure, run, compare, and deploy multiple RAG pipelines in unified stack
             </span>
           </div>
 
-          <div className="flex gap-6 border-l-2 border-line-subtle pl-6">
-            <span className="text-foreground font-medium min-w-40">Research</span>
-            <span className="leading-relaxed">
+          <div className="flex gap-8 pb-6 border-b border-border last:border-0">
+            <span className="text-foreground font-sans text-xs uppercase tracking-wider font-medium min-w-32">Research</span>
+            <span className="leading-relaxed flex-1">
               Named Entity Recognition using LLMs/RAG, measuring improvements against ML baseline models
             </span>
           </div>
@@ -71,9 +77,13 @@ const About = () => {
       </section>
 
       <section className="pt-12 border-t border-border">
-        <h2 className="text-3xl font-serif font-semibold mb-10">Background</h2>
+        <div className="line-decoration mb-10">
+          <h2 className="font-sans text-xs uppercase tracking-widest text-muted-foreground font-medium">
+            Background
+          </h2>
+        </div>
         
-        <div className="space-y-6 text-muted-foreground leading-relaxed">
+        <div className="space-y-6 text-muted-foreground leading-relaxed max-w-2xl">
           <p>
             <span className="text-foreground font-medium">DeFi & Blockchain:</span> Risk management frameworks for lending protocols, 
             oracle implementations, arbitrage strategies, and protocol security analysis. Previous work includes 
@@ -99,19 +109,23 @@ const About = () => {
       </section>
 
       <section className="pt-12 border-t border-border">
-        <h2 className="text-3xl font-serif font-semibold mb-10">Contact</h2>
+        <div className="line-decoration mb-10">
+          <h2 className="font-sans text-xs uppercase tracking-widest text-muted-foreground font-medium">
+            Contact
+          </h2>
+        </div>
         
-        <div className="space-y-6 text-muted-foreground leading-relaxed">
+        <div className="space-y-6 text-muted-foreground leading-relaxed max-w-2xl">
           <div>
             <p className="mb-2">
               <span className="text-foreground font-medium">General inquiries:</span>{" "}
-              <a href="mailto:khurana.garv@gmail.com" className="text-foreground border-b border-foreground hover:opacity-60 transition-opacity">
+              <a href="mailto:khurana.garv@gmail.com" className="text-foreground underline hover:opacity-60 transition-opacity">
                 khurana.garv@gmail.com
               </a>
             </p>
             <p>
               <span className="text-foreground font-medium">Project requests:</span>{" "}
-              <a href="mailto:projects@garvkhurana.tech" className="text-foreground border-b border-foreground hover:opacity-60 transition-opacity">
+              <a href="mailto:projects@garvkhurana.tech" className="text-foreground underline hover:opacity-60 transition-opacity">
                 projects@garvkhurana.tech
               </a>
             </p>
@@ -119,13 +133,13 @@ const About = () => {
           
           <p>
             Also on{" "}
-            <a href="https://linkedin.com/in/garvkhurana" className="text-foreground border-b border-foreground hover:opacity-60 transition-opacity">
+            <a href="https://linkedin.com/in/garvkhurana" target="_blank" rel="noopener noreferrer" className="text-foreground underline hover:opacity-60 transition-opacity">
               LinkedIn
             </a>
             .
           </p>
           
-          <p className="text-sm pt-4 border-t border-border">
+          <p className="text-sm pt-4 border-t border-border font-sans">
             Based in Gurugram, India. Working with{" "}
             <span className="text-foreground">In5 Labs</span> (formerly Techmendous Inc.) and{" "}
             <span className="text-foreground">Fractal.ai</span>.
