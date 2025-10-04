@@ -1,150 +1,127 @@
 const About = () => {
   return (
-    <div className="space-y-16">
+    <div className="space-y-12">
       <section>
-        <div className="line-decoration mb-8">
-          <h1 className="text-4xl font-serif font-semibold">
-            About
-          </h1>
-        </div>
-        
-        <div className="space-y-8 max-w-2xl">
-          <p className="text-xl font-serif leading-relaxed">
-            I'm Garv Khurana, working at the intersection of decentralized finance, 
+        <h1 className="text-2xl font-semibold mb-4">about</h1>
+        <div className="space-y-4 max-w-2xl text-sm">
+          <p>
+            i'm garv khurana, working at the intersection of decentralized finance, 
             risk management, and artificial intelligence.
           </p>
 
-          <p className="text-muted-foreground leading-relaxed">
-            My background spans actuarial science, DeFi protocol design, and full-stack development. 
-            I've built risk frameworks for lending protocols, designed oracle implementations, 
-            and now lead architecture for multi-agentic AI systems at Fractal.ai.
+          <p className="text-muted-foreground">
+            background spans actuarial science, defi protocol design, and full-stack development. 
+            i've built risk frameworks for lending protocols, designed oracle implementations, 
+            and now lead architecture for multi-agentic ai systems at fractal.ai.
           </p>
 
-          <p className="text-muted-foreground leading-relaxed">
-            I believe in rigorous thinking, elegant systems, and the power of first principles. 
-            Whether analyzing protocol security, modeling economic attacks, or building AI platforms, 
-            I focus on understanding complexity deeply enough to create clarity.
+          <p className="text-muted-foreground">
+            i believe in rigorous thinking, elegant systems, and first principles. 
+            whether analyzing protocol security, modeling economic attacks, or building ai platforms, 
+            the goal is understanding complexity deeply enough to create clarity.
           </p>
         </div>
       </section>
 
-      <section className="pt-12 border-t border-border">
-        <div className="line-decoration mb-10">
-          <h2 className="font-sans text-xs uppercase tracking-widest text-muted-foreground font-medium">
-            Currently
-          </h2>
-        </div>
+      <section className="pt-8 border-t border-border">
+        <h2 className="text-xs text-muted-foreground mb-6">currently</h2>
         
-        <div className="space-y-6 text-muted-foreground max-w-2xl">
-          <div className="flex gap-8 pb-6 border-b border-border">
-            <span className="text-foreground font-sans text-xs uppercase tracking-wider font-medium min-w-32">cogentiq</span>
-            <span className="leading-relaxed flex-1">
-              Lead Architect at Fractal.ai building multi-agentic platform for enterprise AI solutions. 
-              <a href="https://cogentiq.fractal.ai" className="text-foreground underline hover:opacity-60 transition-opacity ml-1">
+        <div className="space-y-4 text-sm max-w-2xl">
+          <div className="flex gap-6">
+            <span className="text-foreground min-w-32">cogentiq</span>
+            <span className="text-muted-foreground flex-1">
+              lead architect at fractal.ai building multi-agentic platform for enterprise ai. 
+              <a href="https://cogentiq.fractal.ai" className="text-foreground underline ml-1">
                 cogentiq.fractal.ai
               </a>
             </span>
           </div>
           
-          <div className="flex gap-8 pb-6 border-b border-border">
-            <span className="text-foreground font-sans text-xs uppercase tracking-wider font-medium min-w-32">Underwriting</span>
-            <span className="leading-relaxed flex-1">
-              Lead Tech and Product Owner for AI-powered underwriting risk assessment platform built on cogentiq
+          <div className="flex gap-6">
+            <span className="text-foreground min-w-32">underwriting</span>
+            <span className="text-muted-foreground flex-1">
+              lead tech and product for ai-powered underwriting risk assessment platform
             </span>
           </div>
           
-          <div className="flex gap-8 pb-6 border-b border-border">
-            <span className="text-foreground font-sans text-xs uppercase tracking-wider font-medium min-w-32">insightsin5</span>
-            <span className="leading-relaxed flex-1">
-              Building AI assistant for Shopify store owners to derive actionable business insights
+          <div className="flex gap-6">
+            <span className="text-foreground min-w-32">insightsin5</span>
+            <span className="text-muted-foreground flex-1">
+              building ai assistant for shopify store owners to derive business insights
             </span>
           </div>
 
-          <div className="flex gap-8 pb-6 border-b border-border">
-            <span className="text-foreground font-sans text-xs uppercase tracking-wider font-medium min-w-32">aggrag</span>
-            <span className="leading-relaxed flex-1">
-              Authored framework to configure, run, compare, and deploy multiple RAG pipelines in unified stack
+          <div className="flex gap-6">
+            <span className="text-foreground min-w-32">aggrag</span>
+            <span className="text-muted-foreground flex-1">
+              framework to configure, run, compare, and deploy multiple rag pipelines
             </span>
           </div>
 
-          <div className="flex gap-8 pb-6 border-b border-border last:border-0">
-            <span className="text-foreground font-sans text-xs uppercase tracking-wider font-medium min-w-32">Research</span>
-            <span className="leading-relaxed flex-1">
-              Named Entity Recognition using LLMs/RAG, measuring improvements against ML baseline models
+          <div className="flex gap-6">
+            <span className="text-foreground min-w-32">research</span>
+            <span className="text-muted-foreground flex-1">
+              named entity recognition using llms/rag vs ml baseline models
             </span>
           </div>
         </div>
       </section>
 
-      <section className="pt-12 border-t border-border">
-        <div className="line-decoration mb-10">
-          <h2 className="font-sans text-xs uppercase tracking-widest text-muted-foreground font-medium">
-            Background
-          </h2>
-        </div>
+      <section className="pt-8 border-t border-border">
+        <h2 className="text-xs text-muted-foreground mb-6">background</h2>
         
-        <div className="space-y-6 text-muted-foreground leading-relaxed max-w-2xl">
+        <div className="space-y-4 text-sm text-muted-foreground max-w-2xl">
           <p>
-            <span className="text-foreground font-medium">DeFi & Blockchain:</span> Risk management frameworks for lending protocols, 
-            oracle implementations, arbitrage strategies, and protocol security analysis. Previous work includes 
-            Euler Risk Framework, Cost of Attack Analysis, and early research for EulerSwap.
+            <span className="text-foreground">defi & blockchain:</span> risk management frameworks for lending protocols, 
+            oracle implementations, arbitrage strategies, protocol security analysis. previous work includes 
+            euler risk framework, cost of attack analysis, early research for eulerswap.
           </p>
 
           <p>
-            <span className="text-foreground font-medium">Actuarial Science:</span> Cost of attack analysis, 
+            <span className="text-foreground">actuarial science:</span> cost of attack analysis, 
             risk modeling and assessment, financial risk frameworks applied to decentralized systems.
           </p>
 
           <p>
-            <span className="text-foreground font-medium">Software Development:</span> Full-stack development 
-            with focus on Python and JavaScript. Six years running algorithmic trading platforms (Gravyup, Topgun). 
-            Built simulation tools for UniswapV3 and Balancer protocols.
+            <span className="text-foreground">software development:</span> full-stack development 
+            with focus on python and javascript. six years running algorithmic trading platforms (gravyup, topgun). 
+            built simulation tools for uniswapv3 and balancer protocols.
           </p>
 
           <p>
-            <span className="text-foreground font-medium">Freelance:</span> Top Rated on Upwork with $250K+ 
-            in combined earnings across DeFi, blockchain, and financial technology projects.
+            <span className="text-foreground">freelance:</span> top rated on upwork with $250k+ 
+            in combined earnings across defi, blockchain, and financial technology projects.
           </p>
         </div>
       </section>
 
-      <section className="pt-12 border-t border-border">
-        <div className="line-decoration mb-10">
-          <h2 className="font-sans text-xs uppercase tracking-widest text-muted-foreground font-medium">
-            Contact
-          </h2>
+      <section className="pt-8 border-t border-border">
+        <h2 className="text-xs text-muted-foreground mb-6">contact</h2>
+        
+        <div className="space-y-3 text-sm">
+          <div>
+            <span className="text-muted-foreground">general: </span>
+            <a href="mailto:khurana.garv@gmail.com" className="text-foreground underline">
+              khurana.garv@gmail.com
+            </a>
+          </div>
+          <div>
+            <span className="text-muted-foreground">projects: </span>
+            <a href="mailto:projects@garvkhurana.tech" className="text-foreground underline">
+              projects@garvkhurana.tech
+            </a>
+          </div>
+          <div>
+            <span className="text-muted-foreground">linkedin: </span>
+            <a href="https://linkedin.com/in/garvkhurana" target="_blank" rel="noopener noreferrer" className="text-foreground underline">
+              linkedin.com/in/garvkhurana
+            </a>
+          </div>
         </div>
         
-        <div className="space-y-6 text-muted-foreground leading-relaxed max-w-2xl">
-          <div>
-            <p className="mb-2">
-              <span className="text-foreground font-medium">General inquiries:</span>{" "}
-              <a href="mailto:khurana.garv@gmail.com" className="text-foreground underline hover:opacity-60 transition-opacity">
-                khurana.garv@gmail.com
-              </a>
-            </p>
-            <p>
-              <span className="text-foreground font-medium">Project requests:</span>{" "}
-              <a href="mailto:projects@garvkhurana.tech" className="text-foreground underline hover:opacity-60 transition-opacity">
-                projects@garvkhurana.tech
-              </a>
-            </p>
-          </div>
-          
-          <p>
-            Also on{" "}
-            <a href="https://linkedin.com/in/garvkhurana" target="_blank" rel="noopener noreferrer" className="text-foreground underline hover:opacity-60 transition-opacity">
-              LinkedIn
-            </a>
-            .
-          </p>
-          
-          <p className="text-sm pt-4 border-t border-border font-sans">
-            Based in Gurugram, India. Working with{" "}
-            <span className="text-foreground">In5 Labs</span> (formerly Techmendous Inc.) and{" "}
-            <span className="text-foreground">Fractal.ai</span>.
-          </p>
-        </div>
+        <p className="text-xs text-muted-foreground mt-6 pt-6 border-t border-border">
+          based in gurugram, india. working with in5 labs (formerly techmendous inc.) and fractal.ai.
+        </p>
       </section>
     </div>
   );

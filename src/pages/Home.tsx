@@ -1,117 +1,96 @@
 import { Link } from "react-router-dom";
-import { ArrowRight } from "lucide-react";
 
 const Home = () => {
   return (
-    <div className="space-y-32">
-      {/* Hero Section - One sentence identity */}
-      <section className="py-8 border-b border-border">
-        <p className="text-2xl font-serif leading-relaxed max-w-3xl">
-          Building ideas at the intersection of DeFi, risk modeling, and AI systems — writing about technology, design, and how we build better systems.
+    <div className="space-y-16">
+      {/* Intro */}
+      <section className="py-4">
+        <p className="text-base leading-relaxed max-w-2xl">
+          building at the intersection of defi, risk, and ai systems.
+          <br />
+          <br />
+          lead architect at fractal.ai working on multi-agent platforms. 
+          previously: risk frameworks for euler, protocol simulations, algorithmic trading.
         </p>
       </section>
 
-      {/* Recent Writing */}
-      <section>
-        <div className="line-decoration mb-10">
-          <h2 className="font-sans text-xs uppercase tracking-widest text-muted-foreground font-medium">
-            Recent Writing
-          </h2>
-        </div>
-        <div className="space-y-12">
-          {[
-            {
-              title: "Building Multi-Agentic Systems for DeFi Analysis",
-              date: "March 2025",
-              excerpt: "How autonomous agents can work together to analyze complex DeFi protocols, assess risks, and provide actionable insights in real-time.",
-            },
-            {
-              title: "Risk Frameworks in Decentralized Finance",
-              date: "February 2025",
-              excerpt: "Developing comprehensive risk assessment tools for lending protocols. A case study from building the Euler Risk Framework.",
-            },
-            {
-              title: "From RAG to Production: Lessons in AI Engineering",
-              date: "January 2025",
-              excerpt: "What I learned building real-world AI applications — beyond the tutorials, into the messy reality of production systems.",
-            },
-          ].map((essay) => (
-            <article key={essay.title} className="group">
-              <time className="font-sans text-xs text-muted-foreground tracking-wider uppercase block mb-2">
-                {essay.date}
-              </time>
-              <h3 className="text-xl font-serif font-semibold mb-3 group-hover:opacity-60 transition-opacity cursor-pointer">
-                {essay.title}
-              </h3>
-              <p className="text-muted-foreground leading-relaxed">
-                {essay.excerpt}
-              </p>
-            </article>
-          ))}
+      {/* Quick Links */}
+      <section className="grid grid-cols-2 gap-4 max-w-2xl">
+        <Link 
+          to="/projects" 
+          className="line-frame p-4 hover:bg-secondary transition-colors group"
+        >
+          <div className="text-xs text-muted-foreground mb-1">01</div>
+          <div className="font-medium mb-2">work</div>
+          <div className="text-xs text-muted-foreground">projects & experience</div>
+        </Link>
+        
+        <Link 
+          to="/now" 
+          className="line-frame p-4 hover:bg-secondary transition-colors group"
+        >
+          <div className="text-xs text-muted-foreground mb-1">02</div>
+          <div className="font-medium mb-2">now</div>
+          <div className="text-xs text-muted-foreground">current focus</div>
+        </Link>
+        
+        <Link 
+          to="/notes" 
+          className="line-frame p-4 hover:bg-secondary transition-colors group"
+        >
+          <div className="text-xs text-muted-foreground mb-1">03</div>
+          <div className="font-medium mb-2">notes</div>
+          <div className="text-xs text-muted-foreground">thoughts & ideas</div>
+        </Link>
+        
+        <Link 
+          to="/about" 
+          className="line-frame p-4 hover:bg-secondary transition-colors group"
+        >
+          <div className="text-xs text-muted-foreground mb-1">04</div>
+          <div className="font-medium mb-2">about</div>
+          <div className="text-xs text-muted-foreground">background & contact</div>
+        </Link>
+      </section>
+
+      {/* Recent Activity */}
+      <section className="border-t border-border pt-12">
+        <div className="text-xs text-muted-foreground mb-6">recent</div>
+        <div className="space-y-4 max-w-2xl">
+          <div className="flex gap-4">
+            <span className="text-xs text-muted-foreground min-w-24">mar 2025</span>
+            <span className="text-sm">launched cogentiq multi-agent platform</span>
+          </div>
+          <div className="flex gap-4">
+            <span className="text-xs text-muted-foreground min-w-24">feb 2025</span>
+            <span className="text-sm">research: ner with llms vs traditional ml</span>
+          </div>
+          <div className="flex gap-4">
+            <span className="text-xs text-muted-foreground min-w-24">jan 2025</span>
+            <span className="text-sm">released aggrag rag framework</span>
+          </div>
         </div>
       </section>
 
-      {/* Selected Work */}
-      <section>
-        <div className="line-decoration mb-10">
-          <h2 className="font-sans text-xs uppercase tracking-widest text-muted-foreground font-medium">
-            Selected Work
-          </h2>
-        </div>
-        <div className="grid gap-6">
-          {[
-            {
-              title: "cogentiq",
-              role: "Founder & Lead Engineer",
-              year: "2025",
-              description: "Multi-agentic system for deep research and analysis using collaborative autonomous agents. Built on CrewAI and powered by LLMs for complex reasoning tasks.",
-              tags: ["AI", "Agents", "RAG"],
-            },
-            {
-              title: "aggrag",
-              role: "Creator",
-              year: "2025",
-              description: "Automated RAG pipeline that monitors RSS feeds and generates context-aware summaries. Streamlines information consumption for technical research.",
-              tags: ["AI", "Automation", "NLP"],
-            },
-            {
-              title: "Euler Risk Framework",
-              role: "DeFi Risk Analyst",
-              year: "2024",
-              description: "Comprehensive risk assessment system for Euler Finance lending protocol. Analyzes collateral quality, liquidity, and systemic risk factors.",
-              tags: ["DeFi", "Risk", "Analysis"],
-            },
-            {
-              title: "UniswapV3 Offline Simulator",
-              role: "Developer",
-              year: "2024",
-              description: "Custom backtesting engine for Uniswap V3 liquidity provision strategies using historical blockchain data and concentrated liquidity mathematics.",
-              tags: ["DeFi", "Simulation", "Research"],
-            },
-          ].map((project) => (
-            <article key={project.title} className="line-frame p-6 hover:bg-secondary transition-colors group">
-              <div className="flex items-baseline justify-between mb-4">
-                <h3 className="text-xl font-serif font-semibold group-hover:opacity-60 transition-opacity">
-                  {project.title}
-                </h3>
-                <div className="flex items-baseline gap-4 font-sans text-xs text-muted-foreground">
-                  <span className="uppercase tracking-wider">{project.year}</span>
-                  <span>·</span>
-                  <span className="uppercase tracking-wider">{project.role}</span>
-                </div>
-              </div>
-              <p className="text-muted-foreground leading-relaxed mb-4">
-                {project.description}
-              </p>
-              <div className="flex gap-3">
-                {project.tags.map((tag) => (
-                  <span key={tag} className="font-sans text-xs tracking-wider uppercase text-muted-foreground">
-                    {tag}
-                  </span>
-                ))}
-              </div>
-            </article>
-          ))}
+      {/* Contact */}
+      <section className="border-t border-border pt-12">
+        <div className="text-xs text-muted-foreground mb-6">connect</div>
+        <div className="space-y-2 text-sm">
+          <div>
+            <a href="mailto:khurana.garv@gmail.com" className="hover:text-muted-foreground transition-colors underline">
+              khurana.garv@gmail.com
+            </a>
+          </div>
+          <div>
+            <a href="mailto:projects@garvkhurana.tech" className="hover:text-muted-foreground transition-colors underline">
+              projects@garvkhurana.tech
+            </a>
+          </div>
+          <div>
+            <a href="https://linkedin.com/in/garvkhurana" target="_blank" rel="noopener noreferrer" className="hover:text-muted-foreground transition-colors underline">
+              linkedin.com/in/garvkhurana
+            </a>
+          </div>
         </div>
       </section>
     </div>

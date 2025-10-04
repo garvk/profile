@@ -1,111 +1,89 @@
 const Now = () => {
   return (
-    <div className="space-y-16">
+    <div className="space-y-12">
       <section>
-        <div className="line-decoration mb-8">
-          <h1 className="text-4xl font-serif font-semibold">
-            What I'm doing now
-          </h1>
-        </div>
-        <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl">
-          This is a living document of my current focus areas — what I'm building, 
-          learning, and exploring. Updated regularly.
+        <h1 className="text-2xl font-semibold mb-4">now</h1>
+        <p className="text-sm text-muted-foreground max-w-2xl">
+          what i'm currently focused on — updated regularly.
         </p>
       </section>
 
-      <section className="space-y-12">
-        <article className="pb-8 border-b border-border">
-          <h2 className="font-sans text-xs uppercase tracking-widest text-muted-foreground font-medium mb-4">
-            Building
-          </h2>
-          <div className="space-y-6">
+      <section className="space-y-8">
+        <article className="pb-6 border-b border-border">
+          <h2 className="text-xs text-muted-foreground mb-4">building</h2>
+          <div className="space-y-4 text-sm">
             <div>
-              <h3 className="text-xl font-serif font-semibold mb-2">cogentiq</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Developing a multi-agentic research system where AI agents collaborate 
-                to conduct deep analysis. Currently refining the agent coordination layer 
-                and optimizing for complex reasoning tasks.
+              <div className="font-medium mb-1">cogentiq</div>
+              <p className="text-muted-foreground">
+                developing multi-agentic research system where ai agents collaborate 
+                to conduct deep analysis. currently refining agent coordination and 
+                optimizing for complex reasoning.
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-serif font-semibold mb-2">Underwriting Risk Platform</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Building automated underwriting analysis tools that combine traditional 
-                actuarial models with machine learning. Working on document intelligence 
-                and risk scoring algorithms.
+              <div className="font-medium mb-1">underwriting risk platform</div>
+              <p className="text-muted-foreground">
+                building automated underwriting analysis tools combining traditional 
+                actuarial models with ml. working on document intelligence and risk scoring.
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-serif font-semibold mb-2">insightsin5</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                An AI-powered news analysis platform that distills complex stories into 
-                five key insights. Experimenting with summarization models and information extraction.
+              <div className="font-medium mb-1">insightsin5</div>
+              <p className="text-muted-foreground">
+                ai-powered news analysis platform distilling complex stories into 
+                five key insights. experimenting with summarization models.
               </p>
             </div>
           </div>
         </article>
 
-        <article className="pb-8 border-b border-border">
-          <h2 className="font-sans text-xs uppercase tracking-widest text-muted-foreground font-medium mb-4">
-            Learning
-          </h2>
-          <div className="space-y-4">
-            <p className="text-muted-foreground leading-relaxed">
-              Deep diving into agentic AI architectures — studying ReAct, AutoGPT, and 
-              CrewAI patterns. Exploring how agents can maintain context and collaborate 
-              effectively.
+        <article className="pb-6 border-b border-border">
+          <h2 className="text-xs text-muted-foreground mb-4">learning</h2>
+          <div className="space-y-3 text-sm text-muted-foreground">
+            <p>
+              deep diving into agentic ai architectures — studying react, autogpt, 
+              and crewai patterns.
             </p>
-            <p className="text-muted-foreground leading-relaxed">
-              Reading extensively about risk modeling in DeFi — especially around 
-              oracle manipulation, liquidation cascades, and protocol composability risks.
+            <p>
+              reading extensively about risk modeling in defi — especially oracle 
+              manipulation, liquidation cascades, and protocol composability risks.
             </p>
-            <p className="text-muted-foreground leading-relaxed">
-              Studying information architecture and how to build better knowledge systems. 
-              Currently reading "How to Take Smart Notes" by Sönke Ahrens.
+            <p>
+              studying information architecture and building better knowledge systems. 
+              currently reading "how to take smart notes" by sönke ahrens.
             </p>
           </div>
         </article>
 
-        <article className="pb-8 border-b border-border">
-          <h2 className="font-sans text-xs uppercase tracking-widest text-muted-foreground font-medium mb-4">
-            Research Interests
-          </h2>
-          <ul className="space-y-3">
-            <li className="text-muted-foreground leading-relaxed">
-              • How multi-agent systems can augment human decision-making in complex domains
-            </li>
-            <li className="text-muted-foreground leading-relaxed">
-              • Risk assessment frameworks for novel DeFi primitives
-            </li>
-            <li className="text-muted-foreground leading-relaxed">
-              • Building better tools for thought — personal knowledge management and note-taking systems
-            </li>
-            <li className="text-muted-foreground leading-relaxed">
-              • The intersection of actuarial science and machine learning for automated underwriting
-            </li>
+        <article className="pb-6 border-b border-border">
+          <h2 className="text-xs text-muted-foreground mb-4">research interests</h2>
+          <ul className="space-y-2 text-sm text-muted-foreground">
+            <li>→ multi-agent systems augmenting human decision-making</li>
+            <li>→ risk assessment frameworks for novel defi primitives</li>
+            <li>→ tools for thought and personal knowledge management</li>
+            <li>→ actuarial science meets ml for automated underwriting</li>
           </ul>
         </article>
 
         <article>
-          <h2 className="font-sans text-xs uppercase tracking-widest text-muted-foreground font-medium mb-4">
-            Location & Availability
-          </h2>
-          <p className="text-muted-foreground leading-relaxed mb-4">
-            Currently based in India, working remotely on various projects. Open to 
-            consulting opportunities in DeFi risk analysis, AI system design, and 
-            technical advisory roles.
+          <h2 className="text-xs text-muted-foreground mb-4">location & availability</h2>
+          <p className="text-sm text-muted-foreground mb-3">
+            currently based in india, working remotely. open to consulting in 
+            defi risk analysis, ai system design, and technical advisory roles.
           </p>
-          <p className="text-sm text-muted-foreground">
-            <em>Last updated: March 2025</em>
+          <p className="text-xs text-muted-foreground">
+            last updated: march 2025
           </p>
         </article>
       </section>
 
-      <section className="pt-8 border-t border-border">
-        <p className="text-sm text-muted-foreground leading-relaxed">
-          Inspired by Derek Sivers' <a href="https://nownownow.com/about" target="_blank" rel="noopener noreferrer" className="underline hover:text-foreground">/now page movement</a>. 
-          This is a snapshot of my current priorities — not a comprehensive list of everything I do, 
-          but rather what deserves my focused attention right now.
+      <section className="pt-6 border-t border-border text-xs text-muted-foreground">
+        <p>
+          inspired by{" "}
+          <a href="https://nownownow.com/about" target="_blank" rel="noopener noreferrer" className="underline">
+            /now page movement
+          </a>
+          . snapshot of current priorities, not comprehensive list.
         </p>
       </section>
     </div>

@@ -1,11 +1,10 @@
 import { Link, useLocation } from "react-router-dom";
 
 const navItems = [
-  { name: "About", path: "/about" },
-  { name: "Work", path: "/projects" },
-  { name: "Writing", path: "/essays" },
-  { name: "Now", path: "/now" },
-  { name: "Notes", path: "/notes" },
+  { name: "work", path: "/projects" },
+  { name: "now", path: "/now" },
+  { name: "notes", path: "/notes" },
+  { name: "about", path: "/about" },
 ];
 
 export const Layout = ({ children }: { children: React.ReactNode }) => {
@@ -15,24 +14,24 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
     <div className="min-h-screen bg-background">
       {/* Header */}
       <header className="border-b border-border">
-        <div className="max-w-5xl mx-auto px-8 py-6">
+        <div className="max-w-4xl mx-auto px-6 py-4">
           <nav className="flex items-center justify-between">
             <Link 
               to="/" 
-              className="font-sans text-base font-medium tracking-tight hover:opacity-50 transition-opacity uppercase"
+              className="font-mono text-sm font-medium hover:opacity-50 transition-opacity"
             >
-              Garv Khurana
+              garv khurana
             </Link>
             
-            <ul className="flex gap-10">
+            <ul className="flex gap-6">
               {navItems.map((item) => (
                 <li key={item.path}>
                   <Link
                     to={item.path}
-                    className={`font-sans text-sm font-light tracking-wider transition-opacity uppercase ${
+                    className={`font-mono text-sm transition-opacity ${
                       location.pathname === item.path
-                        ? "opacity-100"
-                        : "opacity-50 hover:opacity-100"
+                        ? "opacity-100 underline"
+                        : "opacity-60 hover:opacity-100"
                     }`}
                   >
                     {item.name}
@@ -45,24 +44,21 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
       </header>
 
       {/* Main content */}
-      <main className="max-w-5xl mx-auto px-8 py-20">
+      <main className="max-w-4xl mx-auto px-6 py-12">
         {children}
       </main>
 
       {/* Footer */}
-      <footer className="border-t border-border mt-32">
-        <div className="max-w-5xl mx-auto px-8 py-10">
-          <div className="flex justify-between items-center font-sans text-xs text-muted-foreground">
-            <p className="tracking-wide">© 2025 Garv Khurana</p>
-            <div className="flex gap-8">
-              <a href="mailto:khurana.garv@gmail.com" className="hover:text-foreground transition-colors tracking-wide uppercase">
-                Email
+      <footer className="border-t border-border mt-24">
+        <div className="max-w-4xl mx-auto px-6 py-8">
+          <div className="flex justify-between items-center font-mono text-xs text-muted-foreground">
+            <p>© 2025</p>
+            <div className="flex gap-6">
+              <a href="mailto:khurana.garv@gmail.com" className="hover:text-foreground transition-colors">
+                email
               </a>
-              <a href="mailto:projects@garvkhurana.tech" className="hover:text-foreground transition-colors tracking-wide uppercase">
-                Collaborate
-              </a>
-              <a href="https://linkedin.com/in/garvkhurana" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors tracking-wide uppercase">
-                LinkedIn
+              <a href="https://linkedin.com/in/garvkhurana" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">
+                linkedin
               </a>
             </div>
           </div>
