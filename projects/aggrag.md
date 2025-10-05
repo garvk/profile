@@ -2,7 +2,7 @@
 
 ## Overview
 
-**aggrag** is an authored framework for configuring, running, comparing, and deploying multiple RAG (Retrieval-Augmented Generation) pipelines in a unified experiment-to-production stack.
+**aggrag** is an authored framework for configuring, running, comparing, and deploying multiple RAG (Retrieval-Augmented Generation) pipelines in a unified experiment-to-production stack. This was presented at NVIDIA GTC (2024)
 
 ## Status
 🟢 **Active** - Open Source Framework
