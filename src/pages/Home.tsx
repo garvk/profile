@@ -1,16 +1,39 @@
 import { Link } from "react-router-dom";
+import { ResumeDownload } from "@/components/ResumeDownload";
 
 const Home = () => {
   return (
     <div className="space-y-16">
       {/* Intro */}
-      <section className="py-4">
+      <section className="py-4 space-y-6">
         <p className="text-base leading-relaxed max-w-2xl">
           building at the intersection of defi, risk, and ai systems.
-          <br />
-          <br />
+        </p>
+        <p className="text-sm text-muted-foreground leading-relaxed max-w-2xl">
           lead architect at fractal.ai working on multi-agent platforms. 
-          previously: risk frameworks for euler, protocol simulations, algorithmic trading.
+          previously: risk frameworks for euler, protocol simulations, $250k+ algorithmic trading services.
+        </p>
+        
+        {/* CTA */}
+        <div className="flex gap-4 pt-4">
+          <ResumeDownload variant="primary" />
+          <Link 
+            to="/projects" 
+            className="line-frame px-6 py-3 hover:bg-secondary transition-colors text-sm"
+          >
+            view projects
+          </Link>
+        </div>
+      </section>
+
+      {/* The Hook */}
+      <section className="border-t border-border pt-12">
+        <blockquote className="text-base leading-relaxed italic max-w-2xl">
+          "why are we not employing actuarial skills outside insurance and pension?"
+        </blockquote>
+        <p className="text-sm text-muted-foreground mt-4 max-w-2xl leading-relaxed">
+          this question sparked a journey from actuarial science to self-taught coding to defi to ai. 
+          each phase validated by market: $250k in services, protocol security work, enterprise ai platforms.
         </p>
       </section>
 
@@ -26,30 +49,30 @@ const Home = () => {
         </Link>
         
         <Link 
-          to="/now" 
+          to="/journey" 
           className="line-frame p-4 hover:bg-secondary transition-colors group"
         >
           <div className="text-xs text-muted-foreground mb-1">02</div>
-          <div className="font-medium mb-2">now</div>
-          <div className="text-xs text-muted-foreground">current focus</div>
+          <div className="font-medium mb-2">journey</div>
+          <div className="text-xs text-muted-foreground">2013 → 2025 timeline</div>
         </Link>
         
         <Link 
-          to="/notes" 
+          to="/philosophy" 
           className="line-frame p-4 hover:bg-secondary transition-colors group"
         >
           <div className="text-xs text-muted-foreground mb-1">03</div>
-          <div className="font-medium mb-2">notes</div>
-          <div className="text-xs text-muted-foreground">thoughts & ideas</div>
+          <div className="font-medium mb-2">philosophy</div>
+          <div className="text-xs text-muted-foreground">beliefs & approach</div>
         </Link>
         
         <Link 
-          to="/about" 
+          to="/company" 
           className="line-frame p-4 hover:bg-secondary transition-colors group"
         >
           <div className="text-xs text-muted-foreground mb-1">04</div>
-          <div className="font-medium mb-2">about</div>
-          <div className="text-xs text-muted-foreground">background & contact</div>
+          <div className="font-medium mb-2">company</div>
+          <div className="text-xs text-muted-foreground">in5 labs & vision</div>
         </Link>
       </section>
 
