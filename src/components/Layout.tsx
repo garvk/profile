@@ -2,9 +2,11 @@ import { Link, useLocation } from "react-router-dom";
 
 const navItems = [
   { name: "work", path: "/projects" },
+  { name: "journey", path: "/journey" },
+  { name: "philosophy", path: "/philosophy" },
+  { name: "company", path: "/company" },
   { name: "now", path: "/now" },
-  { name: "notes", path: "/notes" },
-  { name: "about", path: "/about" },
+  { name: "contact", path: "/contact" },
 ];
 
 export const Layout = ({ children }: { children: React.ReactNode }) => {
