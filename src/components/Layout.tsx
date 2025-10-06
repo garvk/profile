@@ -17,7 +17,7 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
       {/* Header */}
       <header className="border-b border-border">
         <div className="max-w-4xl mx-auto px-6 py-4">
-          <nav className="flex items-center justify-between">
+          <nav className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
             <Link 
               to="/" 
               className="font-mono text-sm font-medium hover:opacity-50 transition-opacity"
@@ -25,7 +25,7 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
               garv khurana
             </Link>
             
-            <ul className="flex gap-6">
+            <ul className="flex flex-wrap gap-x-6 gap-y-3">
               {navItems.map((item) => (
                 <li key={item.path}>
                   <Link
