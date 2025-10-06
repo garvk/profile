@@ -34,6 +34,9 @@ All colors MUST be HSL.
     --accent: 0 0% 95%;
     --accent-foreground: 0 0% 5%;
 
+    /* Active status color: vibrant green for live projects */
+    --status-active: 142 76% 45%;
+
     --destructive: 0 0% 15%;
     --destructive-foreground: 0 0% 98%;
 
