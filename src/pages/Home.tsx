@@ -7,11 +7,12 @@ const Home = () => {
       {/* Intro */}
       <section className="py-4 space-y-6">
         <p className="text-base leading-relaxed max-w-2xl">
-          building at the intersection of defi, risk, and ai systems.
+          building at the intersection of finance, risk, and ai systems.
         </p>
         <p className="text-sm text-muted-foreground leading-relaxed max-w-2xl">
-          lead architect at fractal.ai working on multi-agent platforms. 
-          previously: risk frameworks for euler, protocol simulations, $250k+ algorithmic trading services.
+          lead ai architect at <a href="https://fractal.ai/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors underline">fractal.ai</a> working on multi-agent platforms. 
+          <br />
+          previously: risk frameworks for <a href="https://euler.finance/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors underline">euler</a>, solopreneur behind a tech r&d service business, $250k+ in algorithmic trading product and services.
         </p>
         
         {/* CTA */}
