@@ -1,10 +1,13 @@
 import { Link, useLocation } from "react-router-dom";
 
-const navItems = [
+const primaryNavItems = [
   { name: "work", path: "/projects" },
   { name: "journey", path: "/journey" },
   { name: "philosophy", path: "/philosophy" },
   { name: "company", path: "/company" },
+];
+
+const secondaryNavItems = [
   { name: "now", path: "/now" },
   { name: "contact", path: "/contact" },
 ];
@@ -26,8 +29,22 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
             </Link>
             
             <ul className="flex flex-wrap gap-x-6 gap-y-3">
-              {navItems.map((item) => (
+              {primaryNavItems.map((item) => (
                 <li key={item.path}>
+                  <Link
+                    to={item.path}
+                    className={`font-mono text-sm transition-opacity ${
+                      location.pathname === item.path
+                        ? "opacity-100 underline"
+                        : "opacity-60 hover:opacity-100"
+                    }`}
+                  >
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
+              {secondaryNavItems.map((item) => (
+                <li key={item.path} className="hidden md:inline-block">
                   <Link
                     to={item.path}
                     className={`font-mono text-sm transition-opacity ${
@@ -53,12 +70,21 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
       {/* Footer */}
       <footer className="border-t border-border mt-24">
         <div className="max-w-4xl mx-auto px-6 py-8">
-          <div className="flex justify-between items-center font-mono text-xs text-muted-foreground">
+          <div className="flex flex-col md:flex-row md:justify-between items-center gap-4 font-mono text-xs text-muted-foreground">
             <p>© 2025</p>
-            <div className="flex gap-6">
+            <div className="flex flex-wrap gap-x-4 gap-y-2 justify-center items-center">
+              <Link to="/now" className="hover:text-foreground transition-colors">
+                now
+              </Link>
+              <span>·</span>
+              <Link to="/contact" className="hover:text-foreground transition-colors">
+                contact
+              </Link>
+              <span>·</span>
               <a href="mailto:khurana.garv@gmail.com" className="hover:text-foreground transition-colors">
                 email
               </a>
+              <span>·</span>
               <a href="https://linkedin.com/in/garvkhurana" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">
                 linkedin
               </a>
