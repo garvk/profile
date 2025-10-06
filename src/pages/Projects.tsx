@@ -125,7 +125,9 @@ const Projects = () => {
         {projects.map((project) => (
           <article 
             key={project.title}
-            className="line-frame p-6 hover:border-strong transition-colors group"
+            className={`line-frame p-6 hover:border-strong transition-colors group ${
+              project.status === 'active' ? 'border-l-2 border-l-green-500' : ''
+            }`}
           >
             <div className="flex items-baseline justify-between mb-3 flex-wrap gap-2">
               <h2 className="text-lg font-semibold">
