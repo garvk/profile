@@ -48,7 +48,7 @@ const Projects = () => {
     {
       title: "eulerswap",
       year: "2022-2025",
-      status: "live",
+      status: "done",
       role: "early research",
       description: "automated market maker protocol. provided foundational research for protocol design, amm mechanism analysis, and risk modeling during early phase.",
       tags: ["defi", "amm", "protocol"],
@@ -57,7 +57,7 @@ const Projects = () => {
     {
       title: "euler risk framework",
       year: "2022-2023",
-      status: "archived",
+      status: "done",
       role: "risk consultant",
       description: "comprehensive risk management framework for euler protocol (defi lending). collateral risk assessment, liquidity modeling, oracle risk evaluation.",
       tags: ["defi", "risk", "security"],
