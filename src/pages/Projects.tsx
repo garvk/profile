@@ -130,11 +130,11 @@ const Projects = () => {
             <div className="flex items-baseline justify-between mb-3 flex-wrap gap-2">
               <h2 className="text-lg font-semibold">
                 {project.link ? (
-                  <a href={project.link} target="_blank" rel="noopener noreferrer" className="hover:opacity-60 transition-opacity">
+                  <a href={project.link} target="_blank" rel="noopener noreferrer" className="underline decoration-muted-foreground/40 hover:decoration-foreground transition-all">
                     {project.title}
                   </a>
                 ) : (
-                  project.title
+                  <span className="text-muted-foreground/60">{project.title}</span>
                 )}
               </h2>
               <div className="flex items-baseline gap-3 text-xs text-muted-foreground">
