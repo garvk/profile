@@ -37,11 +37,11 @@ const Projects = () => {
       link: "https://in5yourideas.com/",
     },
     {
-      title: "ner from research papers (private to nvidia)",
+      title: "Entity recognition from research papers (private to nvidia)",
       year: "2024",
       status: "done",
       role: "researcher",
-      description: "leveraging llms and rag to measure improvement against traditional ml baseline models for ner tasks.",
+      description: "leveraging llms and rag to measure improvement against traditional ml baseline models for Named Entity Recognition tasks.",
       tags: ["ai/ml", "nlp", "research"],
       link: null,
     },
