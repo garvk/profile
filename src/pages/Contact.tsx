@@ -44,6 +44,18 @@ const Contact = () => {
               linkedin.com/in/garvkhurana
             </a>
           </div>
+          
+          <div>
+            <div className="text-xs text-muted-foreground mb-1">twitter</div>
+            <a 
+              href="https://x.com/graveeup" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-sm hover:opacity-60 transition-opacity underline"
+            >
+              x.com/graveeup
+            </a>
+          </div>
         </div>
       </section>
 
