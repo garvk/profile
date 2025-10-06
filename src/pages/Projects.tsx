@@ -126,8 +126,9 @@ const Projects = () => {
           <article 
             key={project.title}
             className={`line-frame p-6 hover:border-strong transition-colors group ${
-              project.status === 'active' ? 'border-l-2 border-l-green-500' : ''
+              project.status === 'active' ? 'border-l-[3px]' : ''
             }`}
+            style={project.status === 'active' ? { borderLeftColor: 'hsl(var(--status-active))' } : undefined}
           >
             <div className="flex items-baseline justify-between mb-3 flex-wrap gap-2">
               <h2 className="text-lg font-semibold">
