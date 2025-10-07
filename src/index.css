@@ -1,3 +1,6 @@
+/* Import the monospace web library CSS - must come before @tailwind */
+@import '@owickstrom/the-monospace-web/src/index.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,6 +11,10 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
+    /* Monospace grid settings - must match font rendering exactly */
+    --font-size: 1rem;
+    --line-height: 1.5;
+    
     /* Greyscale palette - pure monochrome with subtle hierarchy */
     --background: 0 0% 100%;
     --foreground: 0 0% 5%;
@@ -64,18 +71,17 @@ All colors MUST be HSL.
   body {
     @apply bg-background text-foreground;
     font-family: 'IBM Plex Mono', 'Courier New', monospace;
-    font-size: 14px;
-    line-height: 1.6;
+    font-size: var(--font-size);
+    line-height: var(--line-height);
     font-weight: 400;
-    -webkit-font-smoothing: subpixel-antialiased;
-    -moz-osx-font-smoothing: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-mono;
     font-weight: 600;
     letter-spacing: 0;
-    line-height: 1.3;
+    line-height: calc(var(--line-height) * 2);
   }
   
   p {
@@ -110,5 +116,63 @@ All colors MUST be HSL.
   .grid-base {
     display: grid;
     gap: calc(var(--spacing-grid) * 2);
+  }
+  
+  /* Monospace grid background utility */
+  .monospace-grid-bg {
+    position: relative;
+    min-height: calc(100vh - 200px);
+  }
+  
+  .monospace-grid-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    background-image:
+      repeating-linear-gradient(
+        0deg,
+        hsl(var(--border)) 0 1px,
+        transparent 1px 100%
+      ),
+      repeating-linear-gradient(
+        90deg,
+        hsl(var(--border)) 0 1px,
+        transparent 1px 100%
+      );
+    background-size: 1ch calc(var(--font-size) * var(--line-height));
+    pointer-events: none;
+    opacity: 0.5;
+  }
+}
+
+/* Override monospace-web styles to work with Tailwind */
+@layer base {
+  /* Preserve Tailwind's approach to margins */
+  * + * {
+    margin-top: 0;
+  }
+  
+  /* Override body styles to work within React app */
+  body {
+    position: static;
+    max-width: 100%;
+    padding: 0;
+  }
+  
+  /* Keep our font preferences */
+  :root {
+    --font-family: 'IBM Plex Mono', 'Courier New', monospace;
+    font-family: var(--font-family);
+  }
+  
+  /* Align monospace grid with our design */
+  html {
+    display: block;
+    width: 100%;
+    align-items: unset;
   }
 }
