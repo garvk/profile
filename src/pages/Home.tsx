@@ -82,15 +82,15 @@ const Home = () => {
         <div className="text-xs text-muted-foreground mb-6">recent</div>
         <div className="space-y-4 max-w-2xl">
           <div className="flex gap-4">
-            <span className="text-xs text-muted-foreground min-w-24">mar 2025</span>
+            <span className="text-xs text-muted-foreground min-w-24">july 2025</span>
             <span className="text-sm">launched cogentiq multi-agent platform</span>
           </div>
           <div className="flex gap-4">
-            <span className="text-xs text-muted-foreground min-w-24">feb 2025</span>
-            <span className="text-sm">research: ner with llms vs traditional ml</span>
+            <span className="text-xs text-muted-foreground min-w-24">may 2025</span>
+            <span className="text-sm">insightsin5: data insights for shopify store owners</span>
           </div>
           <div className="flex gap-4">
-            <span className="text-xs text-muted-foreground min-w-24">jan 2025</span>
+            <span className="text-xs text-muted-foreground min-w-24">aug 2024</span>
             <span className="text-sm">released aggrag rag framework</span>
           </div>
         </div>
@@ -99,21 +99,53 @@ const Home = () => {
       {/* Contact */}
       <section className="border-t border-border pt-12">
         <div className="text-xs text-muted-foreground mb-6">connect</div>
-        <div className="space-y-2 text-sm">
+        <div className="space-y-4">
           <div>
-            <a href="mailto:khurana.garv@gmail.com" className="hover:text-muted-foreground transition-colors underline">
-              khurana.garv@gmail.com
-            </a>
+            <div className="text-xs text-muted-foreground mb-1">email</div>
+            <div className="space-y-1 text-sm">
+              <div>
+                <a href="mailto:khurana.garv@gmail.com" className="hover:text-muted-foreground transition-colors underline">
+                  khurana.garv@gmail.com
+                </a>
+              </div>
+              <div>
+                <a href="mailto:projects@garvkhurana.tech" className="hover:text-muted-foreground transition-colors underline">
+                  projects@garvkhurana.tech
+                </a>
+              </div>
+            </div>
           </div>
+          
           <div>
-            <a href="mailto:projects@garvkhurana.tech" className="hover:text-muted-foreground transition-colors underline">
-              projects@garvkhurana.tech
-            </a>
+            <div className="text-xs text-muted-foreground mb-1">professional</div>
+            <div className="space-y-1 text-sm">
+              <div>
+                <a href="https://linkedin.com/in/garvkhurana" target="_blank" rel="noopener noreferrer" className="hover:text-muted-foreground transition-colors underline">
+                  linkedin.com/in/garvkhurana
+                </a>
+              </div>
+              <div>
+                <a href="https://github.com/garvk" target="_blank" rel="noopener noreferrer" className="hover:text-muted-foreground transition-colors underline">
+                  github.com/garvk
+                </a>
+              </div>
+            </div>
           </div>
+          
           <div>
-            <a href="https://linkedin.com/in/garvkhurana" target="_blank" rel="noopener noreferrer" className="hover:text-muted-foreground transition-colors underline">
-              linkedin.com/in/garvkhurana
-            </a>
+            <div className="text-xs text-muted-foreground mb-1">social</div>
+            <div className="space-y-1 text-sm">
+              <div>
+                <a href="https://x.com/graveeup" target="_blank" rel="noopener noreferrer" className="hover:text-muted-foreground transition-colors underline">
+                  x.com/graveeup
+                </a>
+              </div>
+              <div>
+                <a href="https://www.instagram.com/garvkhurana/" target="_blank" rel="noopener noreferrer" className="hover:text-muted-foreground transition-colors underline">
+                  instagram.com/garvkhurana
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
