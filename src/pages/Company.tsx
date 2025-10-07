@@ -16,7 +16,7 @@ const Company = () => {
           not to build products for market demand. not to solve predefined problems. 
           but to <strong>invent for the pure joy and challenge of invention itself</strong>.
         </p>
-        <p className="text-base font-medium italic">"we want to make inventions. we make inventions."</p>
+        
       </section>
 
       {/* Evolution Timeline */}
@@ -57,15 +57,11 @@ const Company = () => {
         <div className="space-y-4">
           <div className="flex gap-4">
             <span className="text-sm text-muted-foreground">01</span>
-            <p className="text-sm">we make existing science easy to comprehend</p>
+            <p className="text-sm">make existing science easy to comprehend</p>
           </div>
           <div className="flex gap-4">
             <span className="text-sm text-muted-foreground">02</span>
-            <p className="text-sm">we want to make inventions</p>
-          </div>
-          <div className="flex gap-4">
-            <span className="text-sm text-muted-foreground">03</span>
-            <p className="text-sm">we make inventions</p>
+            <p className="text-sm">make inventions</p>
           </div>
         </div>
       </section>
