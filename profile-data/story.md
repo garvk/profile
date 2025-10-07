@@ -71,4 +71,14 @@ This phase represented the convergence of my actuarial risk assessment skills wi
 
 ---
 
+## The Philosophy Behind the Craft
+
+I believe good work transcends outcomes — it's the quiet alignment of systems, aesthetics, and human intent.
+
+My craft lies in building from first principles, shaping teams and tools that embody clarity and permanence. In a world chasing speed, I chase stillness — depth that compounds, elegance that endures.
+
+*I approach work like an artist-engineer — designing elegant systems that make logic feel human and beauty feel inevitable.*
+
+---
+
 *Last extracted from Notion: January 2025*

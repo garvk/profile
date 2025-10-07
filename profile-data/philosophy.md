@@ -2,6 +2,24 @@
 
 ## Driving Beliefs
 
+### Depth Over Noise
+I'm allergic to shallow thinking and empty buzzwords. Whether it's AI, design, or philosophy, I prefer building from first principles — understanding *why* something works before scaling *how* it does.
+
+### Systems > Goals
+I think in frameworks. I don't chase quick wins — I architect systems (technical, personal, operational) that *generate results repeatedly* without relying on constant manual effort or hype.
+
+### Beauty and Logic Can Co-exist
+I value aesthetics not as a layer of polish but as part of functionality. The elegance of a system, product, or space reflects its underlying thought structure. Form and function should speak the same language.
+
+### Work Should Express Identity
+I don't separate who I am from what I build. My projects are self-portraits — philosophical, precise, playful, and deeply intentional. Work is an extension of personal philosophy.
+
+### Technology as Art When It Feels Human
+I believe that AI and code aren't cold tools — they can be expressive, empathetic, and even poetic when designed with emotional intelligence.
+
+### Time and Clarity as Luxury
+I see time as the ultimate creative resource. That's why I value calm mornings, minimal clutter, and deeply thought-out routines — not as rituals of productivity, but as enablers of *clarity* and *control*.
+
 ### Commercializing Academic Research
 At the core of my work is the belief that **academic research should not remain confined to ivory towers**. My mission is to bridge the gap between cutting-edge research and real-world applications that empower communities and businesses.
 
@@ -11,10 +29,28 @@ My journey began with a fundamental question: **"Why are we not employing actuar
 ### Moving at the Speed of Technology
 Technology evolves rapidly, and staying relevant means **moving at the speed of technology**. This philosophy drives continuous learning, rapid experimentation, and bold action.
 
+### Legacy Through Craft
+I'm not chasing short-term applause. I'm building long arcs — things that endure, compound, and define a philosophy or aesthetic long after the launch.
+
 ## Work Approach
 
-### Evidence-Driven Development
-Every decision, every line of code, every system architecture is backed by evidence. From modeling pre-done use cases in aggrag to rigorous testing in DeFi protocols - **data and evidence guide the way forward**.
+### Architect, Then Builder
+I start by mapping the mental model of a problem. Once I've structured the concept, I go deep into execution — coding, designing, articulating. I'm hands-on, but only *after* the architecture feels right.
+
+### High-Talent Density, Low Bureaucracy
+I prefer small, tight, high-context teams that move with intuition and mutual trust — over bloated organizations with "process for the sake of process." Lean, potent, value-driven.
+
+### Synthesis Mindset
+I merge domains fluidly — art with AI, architecture with philosophy, systems design with storytelling. I look for convergence, not specialization.
+
+### Narrative-Driven Builder
+I don't just build products — I build *stories* around them. I understand that meaning scales better than mechanics, and narrative coherence turns a project into a brand.
+
+### Precision + Play
+I work with an unusual mix: surgical precision when it comes to systems and language, but open playfulness when exploring ideas. That duality keeps work inventive and alive.
+
+### Relentlessly Iterative, Emotionally Grounded
+I believe iteration is sacred — but never at the cost of burning out or losing emotional texture. I'd rather ship something deeply *felt* than superficially *optimized*.
 
 ### Intellectually Stimulating Environment
 Work should challenge the mind. Creating environments where **intellectual curiosity thrives** is not just a preference, it's a necessity for innovation.
