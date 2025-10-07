@@ -10,7 +10,7 @@ const Home = () => {
           building at the intersection of finance, risk, and ai systems.
         </p>
         <p className="text-sm text-muted-foreground leading-relaxed max-w-2xl">
-          lead ai architect at <a href="https://fractal.ai/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors underline">fractal.ai</a> working on multi-agent platforms. 
+          ai engineering leader and architect <a href="https://fractal.ai/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors underline">fractal.ai</a> working on multi-agent platforms. 
           <br />
           previously: risk frameworks for <a href="https://euler.finance/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors underline">euler</a>, solopreneur behind a tech r&d service business, $250k+ in algorithmic trading product and services.
         </p>

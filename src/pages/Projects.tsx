@@ -37,6 +37,15 @@ const Projects = () => {
       link: "https://in5yourideas.com/",
     },
     {
+      title: "openai & nvidia partnerships",
+      year: "2024-present",
+      status: "active",
+      role: "partnerships lead & technical liaison",
+      description: "leading strategic partnerships with openai and nvidia from fractal side. partnership development, technical integration strategy, enterprise ai solution architecture, and collaborative innovation initiatives.",
+      tags: ["partnerships", "ai/ml", "enterprise", "strategy"],
+      link: null,
+    },
+    {
       title: "Entity recognition from research papers (private to nvidia)",
       year: "2024",
       status: "done",
@@ -123,60 +132,105 @@ const Projects = () => {
 
       <section className="space-y-6">
         {projects.map((project) => (
-          <article 
-            key={project.title}
-            className={`line-frame p-6 hover:border-strong transition-colors group ${
-              project.status === 'active' ? 'border-l-4' : ''
-            }`}
-            style={project.status === 'active' ? { borderLeftColor: 'hsl(var(--status-active))' } : undefined}
-          >
-            <div className="flex items-baseline justify-between mb-3 flex-wrap gap-2">
-              <h2 className="text-lg font-semibold">
-                {project.link ? (
-                  <a href={project.link} target="_blank" rel="noopener noreferrer" className="underline decoration-muted-foreground/40 hover:decoration-foreground transition-all">
+          project.link ? (
+            <a 
+              key={project.title}
+              href={project.link} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="block"
+            >
+              <article 
+                className={`line-frame p-6 hover:border-strong transition-all group cursor-pointer active:scale-[0.99] active:opacity-80 touch-action-manipulation ${
+                  project.status === 'active' ? 'border-l-4' : ''
+                }`}
+                style={project.status === 'active' ? { borderLeftColor: 'hsl(var(--status-active))' } : undefined}
+              >
+                <div className="flex items-baseline justify-between mb-3 flex-wrap gap-2">
+                  <h2 className="text-lg font-semibold border-b border-border-strong group-hover:border-foreground transition-colors">
                     {project.title}
-                  </a>
-                ) : (
-                  <span className="text-muted-foreground/60">{project.title}</span>
+                  </h2>
+                  <div className="flex items-baseline gap-3 text-xs text-muted-foreground">
+                    <span>{project.year}</span>
+                    <span>·</span>
+                    <span>{project.status}</span>
+                  </div>
+                </div>
+
+                <div className="text-xs text-muted-foreground mb-3">{project.role}</div>
+
+                <p className="text-sm text-muted-foreground leading-relaxed mb-4">
+                  {project.description}
+                </p>
+
+                {project.collaborator && (
+                  <p className="text-xs text-muted-foreground mb-3">
+                    collaborator: {project.collaborator}
+                  </p>
                 )}
-              </h2>
-              <div className="flex items-baseline gap-3 text-xs text-muted-foreground">
-                <span>{project.year}</span>
-                <span>·</span>
-                <span>{project.status}</span>
+
+                <div className="flex flex-wrap gap-2">
+                  {project.tags.map((tag) => (
+                    <span 
+                      key={tag}
+                      className="text-xs text-muted-foreground"
+                    >
+                      [{tag}]
+                    </span>
+                  ))}
+                </div>
+              </article>
+            </a>
+          ) : (
+            <article 
+              key={project.title}
+              className={`line-frame p-6 hover:border-strong transition-colors group ${
+                project.status === 'active' ? 'border-l-4' : ''
+              }`}
+              style={project.status === 'active' ? { borderLeftColor: 'hsl(var(--status-active))' } : undefined}
+            >
+              <div className="flex items-baseline justify-between mb-3 flex-wrap gap-2">
+                <h2 className="text-lg font-semibold">
+                  <span className="text-muted-foreground/80">{project.title}</span>
+                </h2>
+                <div className="flex items-baseline gap-3 text-xs text-muted-foreground">
+                  <span>{project.year}</span>
+                  <span>·</span>
+                  <span>{project.status}</span>
+                </div>
               </div>
-            </div>
 
-            <div className="text-xs text-muted-foreground mb-3">{project.role}</div>
+              <div className="text-xs text-muted-foreground mb-3">{project.role}</div>
 
-            <p className="text-sm text-muted-foreground leading-relaxed mb-4">
-              {project.description}
-            </p>
-
-            {project.collaborator && (
-              <p className="text-xs text-muted-foreground mb-3">
-                collaborator: {project.collaborator}
+              <p className="text-sm text-muted-foreground leading-relaxed mb-4">
+                {project.description}
               </p>
-            )}
 
-            <div className="flex flex-wrap gap-2">
-              {project.tags.map((tag) => (
-                <span 
-                  key={tag}
-                  className="text-xs text-muted-foreground"
-                >
-                  [{tag}]
-                </span>
-              ))}
-            </div>
-          </article>
+              {project.collaborator && (
+                <p className="text-xs text-muted-foreground mb-3">
+                  collaborator: {project.collaborator}
+                </p>
+              )}
+
+              <div className="flex flex-wrap gap-2">
+                {project.tags.map((tag) => (
+                  <span 
+                    key={tag}
+                    className="text-xs text-muted-foreground"
+                  >
+                    [{tag}]
+                  </span>
+                ))}
+              </div>
+            </article>
+          )
         ))}
       </section>
 
       <section className="pt-8 border-t border-border text-xs text-muted-foreground">
         <p>
           for detailed case studies or collaboration:{" "}
-          <a href="mailto:projects@garvkhurana.tech" className="text-foreground underline">
+          <a href="mailto:projects@garvkhurana.tech" className="border-b border-border-strong hover:border-foreground transition-colors">
             projects@garvkhurana.tech
           </a>
         </p>
