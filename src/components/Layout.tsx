@@ -113,6 +113,10 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
               <a href="https://linkedin.com/in/garvkhurana" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">
                 linkedin
               </a>
+              <span>·</span>
+              <a href="https://github.com/garvk" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">
+                github
+              </a>
             </div>
           </div>
         </div>

@@ -46,6 +46,18 @@ const Contact = () => {
           </div>
           
           <div>
+            <div className="text-xs text-muted-foreground mb-1">github</div>
+            <a 
+              href="https://github.com/garvk" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-sm hover:opacity-60 transition-opacity underline"
+            >
+              github.com/garvk
+            </a>
+          </div>
+          
+          <div>
             <div className="text-xs text-muted-foreground mb-1">twitter</div>
             <a 
               href="https://x.com/graveeup" 
@@ -54,6 +66,18 @@ const Contact = () => {
               className="text-sm hover:opacity-60 transition-opacity underline"
             >
               x.com/graveeup
+            </a>
+          </div>
+          
+          <div>
+            <div className="text-xs text-muted-foreground mb-1">instagram</div>
+            <a 
+              href="https://www.instagram.com/garvkhurana/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-sm hover:opacity-60 transition-opacity underline"
+            >
+              instagram.com/garvkhurana
             </a>
           </div>
         </div>
@@ -83,7 +107,7 @@ const Contact = () => {
       {/* Company */}
       <section className="border-t border-border pt-12">
         <div className="space-y-3">
-          <div className="text-xs text-muted-foreground">company</div>
+          <div className="text-xs text-muted-foreground">passion project</div>
           <div className="space-y-2">
             <p className="text-sm">in5 labs (formerly techmendous)</p>
             <p className="text-sm text-muted-foreground">invention laboratory focused on commercializing academic research</p>
@@ -116,6 +140,12 @@ const Contact = () => {
               <span className="text-muted-foreground">•</span>
               <span className="text-sm">actuarial applications in technology</span>
             </li>
+            <li className="flex gap-3">
+              <span className="text-muted-foreground">•</span>
+              <span className="text-sm">and more...</span>
+            </li>
+            
+            
           </ul>
         </div>
       </section>
