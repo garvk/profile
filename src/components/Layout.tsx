@@ -1,4 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
+import { useState, useEffect } from "react";
 
 const primaryNavItems = [
   { name: "work", path: "/projects" },
@@ -14,6 +15,18 @@ const secondaryNavItems = [
 
 export const Layout = ({ children }: { children: React.ReactNode }) => {
   const location = useLocation();
+  const [debugMode, setDebugMode] = useState(() => {
+    const saved = localStorage.getItem('debugMode');
+    return saved ? JSON.parse(saved) : false;
+  });
+
+  useEffect(() => {
+    localStorage.setItem('debugMode', JSON.stringify(debugMode));
+  }, [debugMode]);
+
+  const toggleDebugMode = () => {
+    setDebugMode(!debugMode);
+  };
 
   return (
     <div className="min-h-screen bg-background">
@@ -28,43 +41,55 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
               garv khurana
             </Link>
             
-            <ul className="flex flex-wrap gap-x-6 gap-y-3">
-              {primaryNavItems.map((item) => (
-                <li key={item.path}>
-                  <Link
-                    to={item.path}
-                    className={`font-mono text-sm transition-opacity ${
-                      location.pathname === item.path
-                        ? "opacity-100 underline"
-                        : "opacity-60 hover:opacity-100"
-                    }`}
-                  >
-                    {item.name}
-                  </Link>
-                </li>
-              ))}
-              {secondaryNavItems.map((item) => (
-                <li key={item.path} className="hidden md:inline-block">
-                  <Link
-                    to={item.path}
-                    className={`font-mono text-sm transition-opacity ${
-                      location.pathname === item.path
-                        ? "opacity-100 underline"
-                        : "opacity-60 hover:opacity-100"
-                    }`}
-                  >
-                    {item.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+            <div className="flex items-center gap-6">
+              <ul className="flex flex-wrap gap-x-6 gap-y-3">
+                {primaryNavItems.map((item) => (
+                  <li key={item.path}>
+                    <Link
+                      to={item.path}
+                      className={`font-mono text-sm transition-opacity ${
+                        location.pathname === item.path
+                          ? "opacity-100 underline"
+                          : "opacity-60 hover:opacity-100"
+                      }`}
+                    >
+                      {item.name}
+                    </Link>
+                  </li>
+                ))}
+                {secondaryNavItems.map((item) => (
+                  <li key={item.path} className="hidden md:inline-block">
+                    <Link
+                      to={item.path}
+                      className={`font-mono text-sm transition-opacity ${
+                        location.pathname === item.path
+                          ? "opacity-100 underline"
+                          : "opacity-60 hover:opacity-100"
+                      }`}
+                    >
+                      {item.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+              
+              {/* <button
+                onClick={toggleDebugMode}
+                className="font-mono text-xs px-3 py-1 border border-border hover:bg-accent transition-colors"
+                title="Toggle monospace grid"
+              >
+                {debugMode ? "Grid: ON" : "Grid: OFF"}
+              </button> */}
+            </div>
           </nav>
         </div>
       </header>
 
       {/* Main content */}
-      <main className="max-w-4xl mx-auto px-6 py-12">
-        {children}
+      <main className={`max-w-4xl mx-auto px-6 py-12 relative ${debugMode ? 'monospace-grid-bg' : ''}`}>
+        <div className="relative z-10">
+          {children}
+        </div>
       </main>
 
       {/* Footer */}
