@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Journey = () => {
   const timeline = [
     {
@@ -13,7 +15,7 @@ const Journey = () => {
     {
       year: "2017-2018",
       title: "self-learning & experimentation",
-      description: "self-taught how to code. built algorithmic trading bots for crypto markets using google scripts, r, python, java. hired two engineers to help, but that didn't work out as intended. joined wework.",
+      description: "self-taught how to code. built algorithmic trading bots for crypto markets using google scripts, r, python, java. hired engineers to help, but that didn't work out as intended. setup office at wework.",
     },
     {
       year: "2018-2019",
@@ -28,7 +30,7 @@ const Journey = () => {
     {
       year: "2020-2023",
       title: "establishing techmendous",
-      description: "established techmendous as a tech service company to take on pioneering research and development initiatives across different domains, including actuarial science practice areas. enrolled 2 actuarial analysts who have gone on to be placed in bigger companies and universities.",
+      description: "established techmendous as a tech R&D service company to take on pioneering research and development initiatives across different domains, including actuarial science practice areas. enrolled actuarial analysts who have gone on to be placed in bigger companies and universities.",
     },
     {
       year: "2021-2023",
@@ -39,6 +41,17 @@ const Journey = () => {
       year: "2023-present",
       title: "leading ai innovation",
       description: "took on role as lead architect at fractal.ai, leading the development of novel products using generative ai models. building cogentiq multi-agentic platform, underwriting risk product, and aggrag rag framework.",
+    },
+    {
+      year: "present",
+      title: "looking ahead",
+      description: (
+        <>
+          exploring new opportunities in ai, blockchain, and emerging technologies. reach out through the{" "}
+          <Link to="/contact" className="border-b border-border-strong hover:border-foreground transition-colors">contact page</Link>{" "}
+          for partnerships, consulting engagements, and innovative projects that push boundaries.
+        </>
+      ),
     },
   ];
 
@@ -72,7 +85,13 @@ const Journey = () => {
             }`}
           >
             {/* Timeline marker */}
-            <div className="absolute left-0 top-0 w-3 h-3 -ml-[7px] bg-primary rounded-full" />
+            {index === timeline.length - 1 ? (
+              <div className="absolute left-0 top-0 w-3 h-3 -ml-[7px] bg-primary rounded-full flex items-center justify-center">
+                <div className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: 'hsl(142 76% 45%)' }} />
+              </div>
+            ) : (
+              <div className="absolute left-0 top-0 w-3 h-3 -ml-[7px] bg-primary rounded-full" />
+            )}
             
             <div className="space-y-3">
               <div className="flex items-baseline gap-4">
@@ -87,48 +106,6 @@ const Journey = () => {
         ))}
       </section>
 
-      {/* What This Journey Reveals */}
-      <section className="border-t border-border pt-12 space-y-6">
-        <h2 className="text-lg font-semibold">what this journey reveals</h2>
-        
-        <ul className="space-y-4">
-          <li className="flex gap-3">
-            <span className="text-muted-foreground">•</span>
-            <div>
-              <strong className="font-medium">self-taught excellence:</strong>
-              <span className="text-sm text-muted-foreground"> transitioned from actuarial science to software engineering through self-learning</span>
-            </div>
-          </li>
-          <li className="flex gap-3">
-            <span className="text-muted-foreground">•</span>
-            <div>
-              <strong className="font-medium">validation through market:</strong>
-              <span className="text-sm text-muted-foreground"> built systems that clients were willing to pay for ($250k+ in services)</span>
-            </div>
-          </li>
-          <li className="flex gap-3">
-            <span className="text-muted-foreground">•</span>
-            <div>
-              <strong className="font-medium">entrepreneurial spirit:</strong>
-              <span className="text-sm text-muted-foreground"> founded and grew techmendous while maintaining technical excellence</span>
-            </div>
-          </li>
-          <li className="flex gap-3">
-            <span className="text-muted-foreground">•</span>
-            <div>
-              <strong className="font-medium">innovation focus:</strong>
-              <span className="text-sm text-muted-foreground"> constantly pushing boundaries — from traditional insurance to defi to ai</span>
-            </div>
-          </li>
-          <li className="flex gap-3">
-            <span className="text-muted-foreground">•</span>
-            <div>
-              <strong className="font-medium">mentor & educator:</strong>
-              <span className="text-sm text-muted-foreground"> enrolled and guided actuarial analysts who went on to bigger opportunities</span>
-            </div>
-          </li>
-        </ul>
-      </section>
     </div>
   );
 };
