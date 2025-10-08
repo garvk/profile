@@ -119,6 +119,10 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
               </a>
             </div>
           </div>
+          <div className="mt-4 text-center font-mono text-xs text-muted-foreground opacity-60">
+            <p>the website is created with ai assistance with data extracted from my private notion workspace</p>
+            <p className="mt-1">last update oct 2025</p>
+          </div>
         </div>
       </footer>
     </div>
