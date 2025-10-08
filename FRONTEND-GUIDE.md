@@ -156,7 +156,7 @@ profile-data/
 
 | File | Location | Purpose |
 |------|----------|---------|
-| **Garv Khurana Resume 2025 V2.pdf** | `public/` | Professional resume for download |
+| **GarvKhuranaResume.pdf** | `public/` | Professional resume for download |
 
 ### Content Hierarchy
 
@@ -334,7 +334,7 @@ const ResumeDownload = ({
   className 
 }: ResumeDownloadProps) => {
   // Resume is in public/ directory
-  const resumeUrl = '/Garv-Khurana-Resume-2025-V2.pdf';
+  const resumeUrl = '/GarvKhuranaResume.pdf';
   
   return (
     <a 
@@ -985,5 +985,3 @@ const Philosophy = ({ philosophyData }) => {
 *Document created: October 2025*  
 *For: Personal website development*  
 *Contact: projects@garvkhurana.tech*
-
-
