@@ -130,7 +130,26 @@ const Projects = () => {
         </p>
       </section>
 
-      <section className="space-y-6">
+      <section className="border-t border-border pt-12">
+        <div className="text-xs text-muted-foreground mb-6">domains covered</div>
+        
+        <div className="space-y-2 text-sm text-muted-foreground max-w-2xl">
+          <p>
+            <span className="text-foreground">ai & multi-agent systems:</span> enterprise ai platforms, multi-agent orchestration, evaluation frameworks, automation
+          </p>
+          <p>
+            <span className="text-foreground">defi & blockchain:</span> risk management frameworks, oracle implementations, protocol design, security analysis, cost of attack analysis, uniswapv3 simulations
+          </p>
+          <p>
+            <span className="text-foreground">actuarial science:</span> risk modeling, asset-liability modelling, pensions liability modelling, probability theory, statistical modeling
+          </p>
+          <p>
+            <span className="text-foreground">software development:</span> full-stack development, python & javascript, algorithmic trading software, social commerce webapps
+          </p>
+        </div>
+      </section>
+
+      <section className="space-y-6 pt-12">
         {projects.map((project) => (
           project.link ? (
             <a 
