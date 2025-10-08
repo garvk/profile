@@ -61,6 +61,46 @@ All colors MUST be HSL.
     --spacing-grid: 8px;
     --transition-smooth: all 0.15s ease;
   }
+
+  .dark {
+    /* Dark mode: Inverted greyscale palette */
+    --background: 0 0% 5%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 8%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 8%;
+    --popover-foreground: 0 0% 98%;
+
+    /* Primary: Pure white for emphasis in dark mode */
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 5%;
+
+    /* Secondary: Subtle dark grey for backgrounds */
+    --secondary: 0 0% 12%;
+    --secondary-foreground: 0 0% 98%;
+
+    /* Muted: Mid-grey for secondary text */
+    --muted: 0 0% 12%;
+    --muted-foreground: 0 0% 60%;
+
+    /* Accent: Dark grey for hover states */
+    --accent: 0 0% 15%;
+    --accent-foreground: 0 0% 98%;
+
+    /* Active status color: vibrant green (same in both modes) */
+    --status-active: 142 76% 45%;
+
+    --destructive: 0 0% 85%;
+    --destructive-foreground: 0 0% 5%;
+
+    /* Borders: Lighter to show on dark backgrounds */
+    --border: 0 0% 20%;
+    --border-strong: 0 0% 85%;
+    --input: 0 0% 20%;
+    --ring: 0 0% 85%;
+  }
 }
 
 @layer base {
