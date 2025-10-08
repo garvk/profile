@@ -44,7 +44,7 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
           <nav className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
             <Link 
               to="/" 
-              className="font-mono text-sm font-medium hover:opacity-50 transition-opacity"
+              className="font-mono text-sm font-medium text-foreground hover:opacity-50 transition-opacity"
             >
               garv khurana
             </Link>
@@ -55,7 +55,7 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
                   <li key={item.path}>
                     <Link
                       to={item.path}
-                      className={`font-mono text-sm transition-opacity ${
+                      className={`font-mono text-sm text-foreground transition-opacity ${
                         location.pathname === item.path
                           ? "opacity-100 underline"
                           : "opacity-60 hover:opacity-100"
@@ -69,7 +69,7 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
                   <li key={item.path} className="hidden md:inline-block">
                     <Link
                       to={item.path}
-                      className={`font-mono text-sm transition-opacity ${
+                      className={`font-mono text-sm text-foreground transition-opacity ${
                         location.pathname === item.path
                           ? "opacity-100 underline"
                           : "opacity-60 hover:opacity-100"
@@ -83,7 +83,7 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
               
               <button
                 onClick={cycleTheme}
-                className="font-mono text-xs px-3 py-1 border border-border hover:bg-accent transition-colors"
+                className="font-mono text-xs px-3 py-1 border border-border text-foreground hover:bg-accent transition-colors"
                 title="Cycle theme: light → dark → system"
               >
                 {theme === 'dark' ? 'dark' : theme === 'light' ? 'light' : 'system'}
