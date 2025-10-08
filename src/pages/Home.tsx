@@ -4,15 +4,15 @@ import { ResumeDownload } from "@/components/ResumeDownload";
 const Home = () => {
   return (
     <div className="space-y-16">
-      {/* Intro */}
+      {/* Hero/Intro */}
       <section className="py-4 space-y-6">
         <p className="text-base leading-relaxed max-w-2xl">
-          building at the intersection of finance, risk, and ai systems.
+          i believe good systems outlast trends.
         </p>
         <p className="text-sm text-muted-foreground leading-relaxed max-w-2xl">
-          ai engineering leader and architect <a href="https://fractal.ai/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors underline">fractal.ai</a> working on multi-agent platforms. 
+          whether in ai, risk, or design, i have built structures that turn complexity into clarity.
           <br />
-          previously: risk frameworks for <a href="https://euler.finance/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors underline">euler</a>, solopreneur behind a tech r&d service business, $250k+ in algorithmic trading product and services.
+          my work lives at the intersection of math, science, engineering clarity and aesthetic intent, where logic feels human and design feels inevitable.
         </p>
         
         {/* CTA */}
@@ -27,72 +27,96 @@ const Home = () => {
         </div>
       </section>
 
-      {/* The Hook */}
+      {/* Currently / Selected Work */}
       <section className="border-t border-border pt-12">
-        <blockquote className="text-base leading-relaxed italic max-w-2xl">
-          "why are we not employing actuarial skills outside insurance and pension?"
-        </blockquote>
-        <p className="text-sm text-muted-foreground mt-4 max-w-2xl leading-relaxed">
-          this question sparked a journey from actuarial science to self-taught coding to defi to ai. 
-          each phase validated by market: $250k in services, protocol security work, enterprise ai platforms.
+        <div className="text-xs text-muted-foreground mb-6">currently</div>
+        
+        <p className="text-sm text-muted-foreground mb-8 max-w-2xl">
+          ai engineering leader and architect at <a href="https://fractal.ai/" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-muted-foreground transition-colors underline">fractal.ai</a>, building ai frameworks for evaluation, guardrails and vertical solutions across different domains
+          <br /><br />
+          previously: risk frameworks for lending protocols, oracle implementations, and algorithmic trading systems generating $250k+ in services.
         </p>
+
+        <div className="space-y-4 text-sm max-w-2xl">
+          <div className="flex gap-6">
+            <span className="text-foreground min-w-32">cogentiq</span>
+            <span className="text-muted-foreground flex-1">
+              multi-agent platform for enterprise ai. 
+              <a href="https://cogentiq.fractal.ai" target="_blank" rel="noopener noreferrer" className="text-foreground underline ml-1">
+                cogentiq.fractal.ai
+              </a>
+            </span>
+          </div>
+          
+          <div className="flex gap-6">
+            <span className="text-foreground min-w-32">underwriting</span>
+            <span className="text-muted-foreground flex-1">
+              ai-powered risk assessment for underwriting property insurance 
+            </span>
+          </div>
+          
+          <div className="flex gap-6">
+            <span className="text-foreground min-w-32">insightsin5</span>
+            <span className="text-muted-foreground flex-1">
+              agents for shopify store owners to derive actionable data insights in minutes
+            </span>
+          </div>
+
+          <div className="flex gap-6">
+            <span className="text-foreground min-w-32">aggrag</span>
+            <span className="text-muted-foreground flex-1">
+              framework to configure, evaluate, and deploy ai workflows
+            </span>
+          </div>
+
+          <div className="flex gap-6">
+            <span className="text-foreground min-w-32">research</span>
+            <span className="text-muted-foreground flex-1">
+              entity recognition using llms/rag vs traditional ml models
+            </span>
+          </div>
+        </div>
       </section>
+
 
       {/* Quick Links */}
-      <section className="grid grid-cols-2 gap-4 max-w-2xl">
-        <Link 
-          to="/projects" 
-          className="line-frame p-4 hover:bg-secondary transition-colors group"
-        >
-          <div className="text-xs text-muted-foreground mb-1">01</div>
-          <div className="font-medium mb-2">work</div>
-          <div className="text-xs text-muted-foreground">projects & experience</div>
-        </Link>
-        
-        <Link 
-          to="/journey" 
-          className="line-frame p-4 hover:bg-secondary transition-colors group"
-        >
-          <div className="text-xs text-muted-foreground mb-1">02</div>
-          <div className="font-medium mb-2">journey</div>
-          <div className="text-xs text-muted-foreground">2013 → 2025 timeline</div>
-        </Link>
-        
-        <Link 
-          to="/philosophy" 
-          className="line-frame p-4 hover:bg-secondary transition-colors group"
-        >
-          <div className="text-xs text-muted-foreground mb-1">03</div>
-          <div className="font-medium mb-2">philosophy</div>
-          <div className="text-xs text-muted-foreground">beliefs & approach</div>
-        </Link>
-        
-        <Link 
-          to="/company" 
-          className="line-frame p-4 hover:bg-secondary transition-colors group"
-        >
-          <div className="text-xs text-muted-foreground mb-1">04</div>
-          <div className="font-medium mb-2">company</div>
-          <div className="text-xs text-muted-foreground">in5 labs & vision</div>
-        </Link>
-      </section>
-
-      {/* Recent Activity */}
       <section className="border-t border-border pt-12">
-        <div className="text-xs text-muted-foreground mb-6">recent</div>
-        <div className="space-y-4 max-w-2xl">
-          <div className="flex gap-4">
-            <span className="text-xs text-muted-foreground min-w-24">july 2025</span>
-            <span className="text-sm">launched cogentiq multi-agent platform</span>
-          </div>
-          <div className="flex gap-4">
-            <span className="text-xs text-muted-foreground min-w-24">may 2025</span>
-            <span className="text-sm">insightsin5: data insights for shopify store owners</span>
-          </div>
-          <div className="flex gap-4">
-            <span className="text-xs text-muted-foreground min-w-24">aug 2024</span>
-            <span className="text-sm">released aggrag rag framework</span>
-          </div>
+        <div className="grid grid-cols-2 gap-4 max-w-2xl">
+          <Link 
+            to="/projects" 
+            className="line-frame p-4 hover:bg-secondary transition-colors group"
+          >
+            <div className="text-xs text-muted-foreground mb-1">01</div>
+            <div className="font-medium mb-2">work</div>
+            <div className="text-xs text-muted-foreground">projects & experience</div>
+          </Link>
+          
+          <Link 
+            to="/journey" 
+            className="line-frame p-4 hover:bg-secondary transition-colors group"
+          >
+            <div className="text-xs text-muted-foreground mb-1">02</div>
+            <div className="font-medium mb-2">journey</div>
+            <div className="text-xs text-muted-foreground">2013 → 2025 timeline</div>
+          </Link>
+          
+          <Link 
+            to="/philosophy" 
+            className="line-frame p-4 hover:bg-secondary transition-colors group"
+          >
+            <div className="text-xs text-muted-foreground mb-1">03</div>
+            <div className="font-medium mb-2">philosophy</div>
+            <div className="text-xs text-muted-foreground">beliefs & approach</div>
+          </Link>
+          
+          <Link 
+            to="/company" 
+            className="line-frame p-4 hover:bg-secondary transition-colors group"
+          >
+            <div className="text-xs text-muted-foreground mb-1">04</div>
+            <div className="font-medium mb-2">company</div>
+            <div className="text-xs text-muted-foreground">in5 labs & vision</div>
+          </Link>
         </div>
       </section>
 

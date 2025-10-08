@@ -47,9 +47,8 @@ const Journey = () => {
       title: "looking ahead",
       description: (
         <>
-          exploring new opportunities in ai, blockchain, and emerging technologies. reach out through the{" "}
+          collaborating on intelligent systems and frontier technologies. open to partnerships and leadership roles that align with long-term design and philosophy. reach out through the{" "}
           <Link to="/contact" className="border-b border-border-strong hover:border-foreground transition-colors">contact page</Link>{" "}
-          for partnerships, consulting engagements, and innovative projects that push boundaries.
         </>
       ),
     },
