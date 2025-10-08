@@ -87,6 +87,27 @@ All colors MUST be HSL.
   p {
     margin-bottom: 1em;
   }
+
+  /* Add proper padding to table cells */
+  table th,
+  table td {
+    padding: 0.75rem 1rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  /* Constrain table width to fit on screen */
+  table {
+    width: 100%;
+    max-width: 100%;
+    table-layout: fixed;
+  }
+
+  /* Set column widths */
+  table th:first-child,
+  table td:first-child {
+    width: 30%;
+  }
 }
 
 @layer utilities {

@@ -120,6 +120,46 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Technical Skills Matrix */}
+      <section className="border-t border-border pt-12">
+        <div className="text-xs text-muted-foreground mb-6">technical capabilities</div>
+        
+        <table className="text-sm">
+          <thead>
+            <tr>
+              <th className="width-min">category</th>
+              <th>technologies</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td className="width-min">ai frameworks</td>
+              <td>llamaindex · langchain · taskweaver · crewai · autogen · hugging face · vllm · llama factory · axolotl · etc</td>
+            </tr>
+            <tr>
+              <td className="width-min">ai tooling</td>
+              <td>weights & biases · langsmith · ragas · deepeval · faiss · qdrant · chromadb · claude code · lovable · cline · n8n · etc</td>
+            </tr>
+            <tr>
+              <td className="width-min">languages & frameworks</td>
+              <td>python · r · node.js · google apps script · fastapi · flask</td>
+            </tr>
+            <tr>
+              <td className="width-min">infrastructure</td>
+              <td>cloud services such as aws, gcp, azure etc · multiprocessing/multithreading/async pipelines · rest · webhooks · ai services nvidia nemo, azure ai services, etc</td>
+            </tr>
+            <tr>
+              <td className="width-min">data & version control</td>
+              <td>postgresql · mongodb · sql · sqlalchemy · git · github · bitbucket</td>
+            </tr>
+            <tr>
+              <td className="width-min">domains</td>
+              <td>rag pipelines · nl2sql · agents · fine-tuning · model evaluation · data analytics · ml architecture · trading tools · simulation platforms · algorithmic systems · risk modeling · mitigation frameworks · project architecture · data architecture · distributed systems design</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
       {/* Contact */}
       <section className="border-t border-border pt-12">
         <div className="text-xs text-muted-foreground mb-6">connect</div>
