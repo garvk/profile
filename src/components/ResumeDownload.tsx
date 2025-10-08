@@ -13,7 +13,7 @@ export const ResumeDownload = ({
   className 
 }: ResumeDownloadProps) => {
   // Resume is in public/ directory
-  const resumeUrl = '/Garv%20Khurana%20Resume%202025%20V2.pdf';
+  const resumeUrl = '/GarvKhuranaResume.pdf';
   
   return (
     <a 
