@@ -1,5 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
+import { useTheme } from "next-themes";
 
 const primaryNavItems = [
   { name: "work", path: "/projects" },
@@ -15,6 +16,7 @@ const secondaryNavItems = [
 
 export const Layout = ({ children }: { children: React.ReactNode }) => {
   const location = useLocation();
+  const { theme, setTheme } = useTheme();
   const [debugMode, setDebugMode] = useState(() => {
     const saved = localStorage.getItem('debugMode');
     return saved ? JSON.parse(saved) : false;
@@ -26,6 +28,12 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
 
   const toggleDebugMode = () => {
     setDebugMode(!debugMode);
+  };
+
+  const cycleTheme = () => {
+    if (theme === 'light') setTheme('dark');
+    else if (theme === 'dark') setTheme('system');
+    else setTheme('light');
   };
 
   return (
@@ -73,13 +81,13 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
                 ))}
               </ul>
               
-              {/* <button
-                onClick={toggleDebugMode}
+              <button
+                onClick={cycleTheme}
                 className="font-mono text-xs px-3 py-1 border border-border hover:bg-accent transition-colors"
-                title="Toggle monospace grid"
+                title="Cycle theme: light → dark → system"
               >
-                {debugMode ? "Grid: ON" : "Grid: OFF"}
-              </button> */}
+                {theme === 'dark' ? 'dark' : theme === 'light' ? 'light' : 'system'}
+              </button>
             </div>
           </nav>
         </div>
