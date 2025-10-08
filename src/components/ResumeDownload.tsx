@@ -20,7 +20,7 @@ export const ResumeDownload = ({
       href={resumeUrl}
       download="Garv-Khurana-Resume-2025.pdf"
       className={cn(
-        "inline-flex items-center gap-2 transition-colors font-mono text-sm text-foreground",
+        "inline-flex items-center gap-2 transition-colors font-mono text-sm",
         variant === 'primary' && "line-frame px-6 py-3 hover:bg-primary hover:text-primary-foreground",
         variant === 'secondary' && "text-sm underline hover:opacity-60",
         variant === 'inline' && "underline hover:no-underline",
