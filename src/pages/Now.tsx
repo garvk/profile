@@ -15,29 +15,26 @@ const Now = () => {
             <div>
               <div className="font-medium mb-1">cogentiq</div>
               <p className="text-muted-foreground">
-                developing multi-agentic research system where ai agents collaborate 
-                to conduct deep analysis. currently refining agent coordination and 
-                optimizing for complex reasoning.
+                developed multi-agentic system where ai agents can be configured for business intelligence workflows.
               </p>
             </div>
             <div>
               <div className="font-medium mb-1">underwriting risk platform</div>
               <p className="text-muted-foreground">
-                building automated underwriting analysis tools combining traditional 
-                actuarial models with ml. working on document intelligence and risk scoring.
+                building automated underwriting risk analysis agents combining traditional 
+                actuarial models with ml. working on implementing the solution using deep agents architecture, including chat/agent mode, file tools, mcp tools etc.
               </p>
             </div>
             <div>
               <div className="font-medium mb-1">insightsin5</div>
               <p className="text-muted-foreground">
-                ai-powered news analysis platform distilling complex stories into 
-                five key insights. experimenting with summarization models.
+                ai-powered business intelligence platform distilling complex data into simple actionable insights for shopify store owners.
               </p>
             </div>
           </div>
         </article>
 
-        <article className="pb-6 border-b border-border">
+        {/* <article className="pb-6 border-b border-border">
           <h2 className="text-xs text-muted-foreground mb-4">learning</h2>
           <div className="space-y-3 text-sm text-muted-foreground">
             <p>
@@ -53,9 +50,9 @@ const Now = () => {
               currently reading "how to take smart notes" by sönke ahrens.
             </p>
           </div>
-        </article>
+        </article> */}
 
-        <article className="pb-6 border-b border-border">
+        {/* <article className="pb-6 border-b border-border">
           <h2 className="text-xs text-muted-foreground mb-4">research interests</h2>
           <ul className="space-y-2 text-sm text-muted-foreground">
             <li>→ multi-agent systems augmenting human decision-making</li>
@@ -63,7 +60,7 @@ const Now = () => {
             <li>→ tools for thought and personal knowledge management</li>
             <li>→ actuarial science meets ml for automated underwriting</li>
           </ul>
-        </article>
+        </article> */}
 
         <article>
           <h2 className="text-xs text-muted-foreground mb-4">location & availability</h2>
