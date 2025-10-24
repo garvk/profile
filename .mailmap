@@ -1,0 +1,4 @@
+# Mailmap file to properly attribute commits
+# Format: Correct Name <correct@email.com> Old Name <old@email.com>
+
+Garv K <projects@garvkhurana.tech> Garv K <garv@euler.xyz>
