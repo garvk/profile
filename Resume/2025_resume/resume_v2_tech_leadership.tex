@@ -1,0 +1,283 @@
+%-------------------------
+% Resume in Latex
+% Author : Garv Khurana
+% Version B: Tech Leadership Focus (CTO/VP Engineering)
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage{graphicx}
+\usepackage{microtype}
+\usepackage{mathptmx}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\definecolor{terracotta}{RGB}{204,85,0}
+\definecolor{linkedinblue}{RGB}{0,119,181}
+\definecolor{githubgray}{RGB}{24,23,23}
+
+\usepackage{xcolor}
+\usepackage[colorlinks=true, linkcolor=terracotta, urlcolor=terracotta]{hyperref}
+
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{soul}
+\usepackage{fontawesome5}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small\rmfamily{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[5]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1}\normalfont{#2} & \textit{\small#3} \\
+      \textit{\small#4} & \textit{\small #5} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\scalebox{0.3}{$\bullet$}}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.21in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[label={\scalebox{0.3}{$\bullet$}}]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \Large \scshape \textls[512]{Garv Khurana} \\ \vspace{1pt}
+    \footnotesize Leader $|$ Builder $|$ Inventor \\ \vspace{4pt}
+    \small\href{https://garvkhurana.tech}{\textcolor{terracotta}{\faGlobe}} $|$ 
+    \href{https://linkedin.com/in/garvkhurana}{\textcolor{linkedinblue}{\faLinkedin}} $|$
+    \href{https://github.com/garvk}{\textcolor{githubgray}{\faGithub}}
+\end{center}
+
+
+%-----------TECHNICAL LEADERSHIP-----------
+\section{Technical Leadership \& Expertise}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {}{}{}
+      {}{}
+      \vspace{-21pt}
+      \resumeItemListStart
+        \resumeItem{\textbf{Engineering Leadership:} Built and led 15+ member teams across multiple projects; orchestrated work across 10-15 cross-functional teams; P\&L ownership (\$750K+ revenue); scaled teams from 2 to 15 members; established hiring processes, engineering culture, and technical standards}
+        \resumeItem{\textbf{Technical Architecture:} Production AI/ML systems (LLMs, multi-agent, RAG); Full-stack (Python, JavaScript, TypeScript, React, Node.js); Cloud infrastructure (AWS, Azure, GCP, Docker, Kubernetes); DeFi protocols, blockchain, quantitative modeling}
+        \resumeItem{\textbf{Business \& Strategic Impact:} \$750K+ revenue generation; 0→1 product launches; 5+ enterprise applications serving Fortune 500; Top Rated on Upwork (20+ five-star reviews); NVIDIA GTC presenter; founded and scaled one company to profitability}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------PROFESSIONAL EXPERIENCE-----------
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Lead Architect (Generative AI)}{, Fractal.ai}{August 2023 -- Present}
+      {Enterprise AI company serving Fortune 500 clients}{Gurugram, India}
+      \resumeItemListStart
+        \resumeItem{Leading \textbf{15+ member engineering team} building Fractal's enterprise AI platform; managing technical roadmap, architecture decisions, hiring, and delivery across 2-3 parallel projects}
+        \resumeItem{Architected \textbf{\href{https://fractal.ai/products/cogentiq/}{cogentiq}}, Fractal's flagship multi-agentic AI platform, from concept to production serving as technical foundation for \textbf{5+ enterprise applications} deployed to Fortune 500 clients}
+        \resumeItem{Built and launched \textbf{Underwriting Risk Product} as Lead Tech \& Product Owner—enterprise vertical solution automating insurance risk assessment; owned entire product lifecycle from customer discovery to production deployment}
+        \resumeItem{Developed \textbf{Marshall Goldsmith AI} (\href{https://marshallgoldsmith.ai/}{marshallgoldsmith.ai})—AI coaching platform for executive leadership development; managed cross-functional collaboration with product, design, and business stakeholders}
+        \resumeItem{Established engineering best practices including code review processes, deployment pipelines, monitoring systems, and evaluation frameworks for production applications}
+        \resumeItem{Led technical hiring and onboarding; grew team from 8 to 15 engineers; established technical standards and engineering culture}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  
+  \vspace{-15pt}
+  \hspace{0.15in}\rule{\dimexpr\textwidth-0.15in\relax}{0.4pt}
+  \vspace{-21pt}
+  
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Founder \& CEO}{, Techmendous Inc.}{2018 -- 2023}
+      {Finance and technology company providing R\&D services across algorithmic trading, DeFi, and AI}{Virtual Office - Global}
+      \resumeItemListStart
+        \resumeItem{Founded and scaled technology company generating \textbf{\$500K+ revenue} from proprietary algorithmic trading systems; achieved profitability within 18 months through technical execution and strategic client acquisition}
+        \resumeItem{Built cross-disciplinary engineering teams of \textbf{8-10 members} (software engineers, ML engineers, actuaries, full-stack developers); responsible for full P\&L, hiring strategy, compensation decisions, and resource allocation}
+        \resumeItem{Achieved \textbf{Top Rated status on Upwork} with \textbf{\$250K+ client earnings}; delivered 20+ five-star projects demonstrating ability to understand client needs, scope technical work, and deliver high-quality solutions}
+        \resumeItem{Created \textbf{AWS ML/AI educational content} (9 lecture videos) for Fortune 500 executive audience; demonstrated ability to communicate complex technical concepts to business stakeholders}
+        \resumeItem{\textbf{Led DeFi Research \& Development (2021-2023):} Built risk management framework for Euler Protocol; contributed to \href{https://github.com/euler-xyz/euler-swap/blob/master/docs/whitepaper/EulerSwap_White_Paper.pdf}{EulerSwap research paper}; developed simulation tools for DeFi protocols including Uniswap, Balancer, and oracle systems; demonstrated technical breadth across blockchain, finance, and risk management}
+        \resumeItem{Managed all business operations: technical delivery, client relationships, financial planning, team culture, strategic planning}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  
+  \vspace{-15pt}
+  \hspace{0.15in}\rule{\dimexpr\textwidth-0.15in\relax}{0.4pt}
+  \vspace{-21pt}
+
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Founder \& Lead}{, Personal Projects}{Ongoing}
+      {Technical innovation initiatives}{}
+      \resumeItemListStart
+        \resumeItem{\textbf{\href{https://github.com/genai-apps/aggrag}{aggrag}:} Authored and open-sourced framework for RAG experimentation; \textbf{presented at NVIDIA GTC 2024} in San Francisco demonstrating thought leadership in AI/ML community}
+        \resumeItem{\textbf{\href{https://in5yourideas.com/}{insightsin5}:} Building AI-powered business intelligence platform for SMB market; managing full product lifecycle from concept to development}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  
+  \vspace{-15pt}
+  \hspace{0.15in}\rule{\dimexpr\textwidth-0.15in\relax}{0.4pt}
+  \vspace{-21pt}
+
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Actuarial Analyst}{, RSA Insurance Group}{2014 -- 2017}
+      {Legacy insurance business managing \$8.5bn pension liabilities}{Delhi/London}
+      \resumeItemListStart
+        \resumeItem{Built quantitative models for enterprise-scale pension portfolio management; delivered \textbf{\$200M+ business value} through systematic risk analysis and portfolio optimization}
+        \resumeItem{Led technical training and knowledge transfer for \textbf{8-member analyst team}; redesigned onboarding curriculum improving efficiency by 40\%}
+        \resumeItem{Demonstrated ability to communicate complex technical work to executive stakeholders in quarterly business reviews}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  
+  \vspace{-15pt}
+  \hspace{0.15in}\rule{\dimexpr\textwidth-0.15in\relax}{0.4pt}
+  \vspace{-21pt}
+
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Risk Analyst}{, Essex Lake Group}{2014}
+      {Management consulting firm, \$42M annual revenue}{Delhi}
+      \resumeItemListStart
+        \resumeItem{Led analytical team to \textbf{Top 6 placement} in nationwide corporate strategy competition at Indian School of Business}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------KEY PROJECTS-----------
+\section{Key Projects \& Technical Contributions}
+ \resumeSubHeadingListStart
+    \resumeSubheading
+      {}{}{}
+      {}{}
+      \vspace{-21pt}
+      \resumeItemListStart
+        \resumeItem{\textbf{\href{https://fractal.ai/products/cogentiq/}{cogentiq}} - Enterprise AI Platform: Led architecture of Fractal's flagship platform for orchestrating AI agents. \textit{Impact: 5+ production applications, Fortune 500 deployment}}
+        \resumeItem{\textbf{\href{https://github.com/genai-apps/aggrag}{aggrag}} (NVIDIA GTC 2024): Open-source RAG experimentation framework. \textit{Impact: Community adoption, conference presentation, thought leadership}}
+        \resumeItem{\textbf{Techmendous Trading Platform}: Built autonomous trading system from concept to \$500K+ revenue. \textit{Impact: Market validation, technical recognition}}
+        \resumeItem{\textbf{Euler Risk Framework}: DeFi security research and protocol analysis. \textit{Impact: Protocol security, research publication}}
+        \resumeItem{\textbf{Marshall Goldsmith AI}: Executive coaching platform managing product from concept to production. \textit{Impact: Production deployment, cross-functional leadership}}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------ACADEMIC EXPERIENCE-----------
+\section{Academic Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Student Actuary}{}{2013 -- 2019}
+      {Institute and Faculty of Actuaries \& Institute of Actuaries of India}{UK \& India}
+      \resumeItemListStart
+        \resumeItem{Professional qualification in quantitative risk modeling; applied methods to algorithmic trading and blockchain protocols}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  
+  \vspace{-15pt}
+  \hspace{0.15in}\rule{\dimexpr\textwidth-0.15in\relax}{0.4pt}
+  \vspace{-21pt}
+  
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Executive Program in Algorithmic Trading}{, Quantinsti}{2016}
+      {6-month CPD-accredited program}{India}
+      \resumeItemListStart
+        \resumeItem{Professional development in quantitative finance; recognized by profession leadership}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  
+  \vspace{-15pt}
+  \hspace{0.15in}\rule{\dimexpr\textwidth-0.15in\relax}{0.4pt}
+  \vspace{-21pt}
+  
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Automobile Engineering, B.Tech}{}{2009 -- 2013}
+      {Manipal University}{India}
+      \resumeItemListStart
+        \resumeItem{Founding member of SolarMobil Manipal; demonstrates early entrepreneurship and technical innovation}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------LEADERSHIP & RECOGNITION-----------
+\section{Leadership \& Recognition}
+ \resumeSubHeadingListStart
+    \resumeSubheading
+      {}{}{}
+      {}{}
+      \vspace{-21pt}
+      \resumeItemListStart
+        \resumeItem{\textbf{Speaking:} NVIDIA GTC 2024 (San Francisco); AWS ML/AI content for Fortune 500 executives; EulerSwap research paper contributor}
+        \resumeItem{\textbf{Recognition:} Top Rated Freelancer on Upwork (\$250K+ earnings, 20+ five-star reviews); Institute of Actuaries acknowledgment; AI Evaluation training by Hamel Husain}
+        \resumeItem{\textbf{Mentorship \& Team Development:} Mentored engineers who progressed to senior roles at major institutions; scaled teams from 2 to 15 members; established hiring processes and engineering culture}
+        \resumeItem{\textbf{Entrepreneurial Track Record:} Founded two companies (\$500K trading platform, \$250K consulting); demonstrated market validation scaling first engagement from \$5K to \$250K+ total; multiple 0→1 product launches}
+        \resumeItem{\textbf{Key Strengths:} 0→1 product development; technical architecture and engineering leadership; P\&L management; cross-functional collaboration; hiring and team building}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}

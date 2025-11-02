@@ -1,0 +1,288 @@
+%-------------------------
+% Resume in Latex
+% Author : Garv Khurana
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage{graphicx}
+\usepackage{microtype}
+\usepackage{mathptmx}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\definecolor{terracotta}{RGB}{204,85,0}
+\definecolor{linkedinblue}{RGB}{0,119,181}
+\definecolor{githubgray}{RGB}{24,23,23}
+
+\usepackage{xcolor}
+\usepackage[colorlinks=true, linkcolor=terracotta, urlcolor=terracotta]{hyperref}
+
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{soul}
+\usepackage{fontawesome5}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small\rmfamily{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[5]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1}\normalfont{#2} & \textit{\small#3} \\
+      \textit{\small#4} & \textit{\small #5} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\scalebox{0.3}{$\bullet$}}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.21in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[label={\scalebox{0.3}{$\bullet$}}]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \Large \scshape \textls[512]{Garv Khurana} \\ \vspace{1pt}
+    \footnotesize Leader $|$ Builder $|$ Inventor \\ \vspace{4pt}
+    \small\href{https://garvkhurana.tech}{\textcolor{terracotta}{\faGlobe}} $|$ 
+    \href{https://linkedin.com/in/garvkhurana}{\textcolor{linkedinblue}{\faLinkedin}} $|$
+    \href{https://github.com/garvk}{\textcolor{githubgray}{\faGithub}}
+\end{center}
+
+
+%-----------TECHNICAL LEADERSHIP-----------
+\section{Technical Leadership \& AI/ML Expertise}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {}{}{}
+      {}{}
+      \vspace{-21pt}
+      \resumeItemListStart
+        \resumeItem{\textbf{AI/ML \& Generative AI:} Large Language Models (GPT, Claude, Gemini, Llama, Mistral), Retrieval-Augmented Generation (LangChain, LlamaIndex, Haystack), Multi-Agent Systems (LangGraph, AutoGen, CrewAI), ML Frameworks (TensorFlow, PyTorch, Hugging Face Transformers), Model Evaluation (LLM-as-Judge, Custom Evals, RAGAS, A/B testing), MLOps (Weights \& Biases, MLflow)}
+        \resumeItem{\textbf{Engineering \& Architecture:} Python, JavaScript, TypeScript, SQL, R; Node.js, FastAPI, Flask, React, Next.js; AWS, Azure, GCP, Docker, Kubernetes, CI/CD; PostgreSQL, MongoDB, Redis, Pinecone, Weaviate, ChromaDB, Qdrant}
+        \resumeItem{\textbf{Specialized Domains:} DeFi \& Blockchain (smart contracts, protocol analysis, oracle systems), Risk Modeling (actuarial methods, quantitative modeling, Monte Carlo simulations), Data Science (statistical analysis, time series forecasting)}
+        \resumeItem{\textbf{Leadership \& Product:} Team leadership (15+ engineers), cross-functional collaboration (10-15 teams), product management, roadmap planning, stakeholder management, P\&L ownership, budget allocation}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------PROFESSIONAL EXPERIENCE-----------
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Lead Architect (Generative AI)}{, Fractal.ai}{August 2023 -- Present}
+      {Enterprise AI company serving Fortune 500 clients}{Gurugram, India}
+      \resumeItemListStart
+        \resumeItem{Architected and deployed \textbf{\href{https://fractal.ai/products/cogentiq/}{cogentiq}}, Fractal's flagship multi-agentic AI platform, serving as technical foundation for \textbf{5+ production} enterprise applications}
+        \resumeItem{Leading \textbf{15+ member engineering team} across 2-3 parallel AI/ML projects; managing technical roadmap, architecture decisions, and cross-functional collaboration with \textbf{10-15 teams}}
+        \resumeItem{Built \textbf{Underwriting Risk Product} as Lead Tech \& Product Owner—an AI-powered vertical solution on cogentiq that automates risk assessment for insurance enterprises using LLMs and multi-agent workflows}
+        \resumeItem{Developed \textbf{Marshall Goldsmith AI} (\href{https://marshallgoldsmith.ai/}{marshallgoldsmith.ai}), an AI coaching bot leveraging LLMs for personalized executive coaching and leadership development}
+        \resumeItem{Led architecture decisions for production LLM applications including prompt engineering, RAG optimization, vector database selection, custom evaluation frameworks, and model deployment strategies}
+        \resumeItem{Conducted research on \textbf{Named Entity Recognition using LLMs vs. traditional ML baselines}, establishing evaluation frameworks and cost-performance analysis for enterprise AI model selection}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  
+  \vspace{-15pt}
+  \hspace{0.15in}\rule{\dimexpr\textwidth-0.15in\relax}{0.4pt}
+  \vspace{-21pt}
+  
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Founder \& CEO}{, Techmendous Inc.}{2018 -- 2023}
+      {Finance and technology company providing R\&D as a service across algorithmic trading, DeFi, and AI}{Virtual Office - Global}
+      \resumeItemListStart
+        \resumeItem{Generated \textbf{\$500K+ revenue} from proprietary algorithmic trading systems; products recognized by Institute of Actuaries of India and Quantinsti for innovative application of actuarial methods}
+        \resumeItem{Achieved \textbf{Top Rated status on Upwork} with \textbf{\$250K+ earnings}; delivered 20+ five-star projects in algorithmic trading, DeFi protocol development, and financial technology consulting}
+        \resumeItem{Built and managed \textbf{cross-disciplinary teams of 8-10 members} (Python developers, ML engineers, actuaries, full-stack engineers); responsible for P\&L management, hiring strategy, and budget allocation}
+        \resumeItem{Created \textbf{AWS ML/AI educational content} (9 lecture videos) watched by Fortune 500 executives; covered machine learning fundamentals, deployment strategies, and enterprise AI adoption}
+        \resumeItem{\textbf{DeFi Research \& Development (2021-2023):} Developed Euler Risk Framework for DeFi lending protocol security; contributed to \href{https://github.com/euler-xyz/euler-swap/blob/master/docs/whitepaper/EulerSwap_White_Paper.pdf}{EulerSwap research paper}; built UniswapV3 Offline Simulator for liquidity modeling and cost-of-attack analysis; integrated FTSO oracle systems; developed Balancer Protocol simulations and Topgun Arbitrage platform}
+        \resumeItem{Mentored \textbf{2 actuarial analysts} who progressed to senior positions at major financial institutions and research universities}
+        \resumeItem{Bootstrapped entire business from concept to profitability within 18 months through technical execution and strategic client acquisition}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  
+  \vspace{-15pt}
+  \hspace{0.15in}\rule{\dimexpr\textwidth-0.15in\relax}{0.4pt}
+  \vspace{-21pt}
+
+  \pagebreak
+  
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Founder \& Lead}{, Personal Projects}{Ongoing}
+      {AI and DeFi innovation initiatives}{}
+      \resumeItemListStart
+        \resumeItem{\textbf{\href{https://github.com/genai-apps/aggrag}{aggrag}:} Authored open-source framework for RAG experimentation enabling configuration, comparison, and deployment of multiple retrieval-augmented generation pipelines; \textbf{presented at NVIDIA GTC 2024} in San Francisco}
+        \resumeItem{\textbf{\href{https://in5yourideas.com/}{insightsin5}:} Developing AI-powered business intelligence platform for Shopify store owners, leveraging natural language to SQL queries and LLM-based insight generation}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  
+  \vspace{-15pt}
+  \hspace{0.15in}\rule{\dimexpr\textwidth-0.15in\relax}{0.4pt}
+  \vspace{-21pt}
+
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Actuarial Analyst}{, RSA Insurance Group}{2014 -- 2017}
+      {Legacy 300-year-old insurance business managing \$8.5bn pension liabilities}{Delhi/London}
+      \resumeItemListStart
+        \resumeItem{Built quantitative models for pension liability portfolio management; improved forecasting of rare catastrophic events (e.g., Lehman Brothers bankruptcy impact)}
+        \resumeItem{Trained \textbf{8-member analyst team} on quantitative modeling software; revamped technical training curriculum improving onboarding efficiency by 40\%}
+        \resumeItem{Delivered \textbf{\$200M+ value} through systematic risk analysis, diversifying between systematic and diversifiable risk components}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  
+  \vspace{-15pt}
+  \hspace{0.15in}\rule{\dimexpr\textwidth-0.15in\relax}{0.4pt}
+  \vspace{-21pt}
+
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Risk Analyst}{, Essex Lake Group}{2014}
+      {Profit enhancement consulting firm with \$42M annual revenue, founded by Wharton alumni}{Delhi}
+      \resumeItemListStart
+        \resumeItem{Led team to \textbf{Top 6 placement} in corporate case challenge at Indian School of Business, formulating 5-year strategic roadmap for Indian government digitization initiatives}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------SELECT PROJECTS-----------
+\section{Select Projects \& Open Source}
+ \resumeSubHeadingListStart
+    \resumeSubheading
+      {}{}{}
+      {}{}
+      \vspace{-21pt}
+      \resumeItemListStart
+        \resumeItem{\textbf{\href{https://github.com/genai-apps/aggrag}{aggrag}} \textit{(NVIDIA GTC 2024)}: Open-source framework for RAG experimentation; unified pipeline for configuration, comparison, and production deployment. Tech: Python, LangChain, vector databases}
+        \resumeItem{\textbf{\href{https://fractal.ai/products/cogentiq/}{cogentiq}}: Multi-agentic AI platform at Fractal.ai for orchestrating AI agents across enterprise workflows. Foundation for underwriting risk, customer service, and business intelligence solutions}
+        \resumeItem{\textbf{Marshall Goldsmith AI}: Executive coaching platform leveraging LLMs for personalized leadership development. Tech: LLMs, conversational AI, RAG, custom evaluation frameworks}
+        \resumeItem{\textbf{Euler Risk Framework}: Comprehensive DeFi security research analyzing collateral, liquidity, oracle risks. Includes Euler Scan monitoring tool and cost-of-attack analysis framework}
+        \resumeItem{\textbf{UniswapV3 Offline Simulator}: Protocol analysis tool for liquidity modeling and cost-of-attack analysis in AMM protocols. Tech: Python, Web3.py, mathematical modeling}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------ACADEMIC EXPERIENCE-----------
+\section{Academic Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Student Actuary}{}{2013 -- 2019}
+      {Institute and Faculty of Actuaries \& Institute of Actuaries of India}{UK \& India}
+      \resumeItemListStart
+        \resumeItem{Cleared CT Series; applied actuarial methods to non-traditional domains including algorithmic trading and DeFi protocol risk assessment}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  
+  \vspace{-15pt}
+  \hspace{0.15in}\rule{\dimexpr\textwidth-0.15in\relax}{0.4pt}
+  \vspace{-21pt}
+  
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Executive Program in Algorithmic Trading}{, Quantinsti}{2016}
+      {6-month CPD-accredited foundation course}{India}
+      \resumeItemListStart
+        \resumeItem{Exemplified application of actuarial methods outside traditional insurance; recognized by profession leadership}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  
+  \vspace{-15pt}
+  \hspace{0.15in}\rule{\dimexpr\textwidth-0.15in\relax}{0.4pt}
+  \vspace{-21pt}
+  
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Automobile Engineering, B.Tech}{}{2009 -- 2013}
+      {Manipal University}{India}
+      \resumeItemListStart
+        \resumeItem{Founding member of SolarMobil Manipal to design and fabricate solar-powered race car; 4 vehicles launched since 2011}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------SPEAKING & RECOGNITION-----------
+\section{Speaking, Research \& Recognition}
+ \resumeSubHeadingListStart
+    \resumeSubheading
+      {}{}{}
+      {}{}
+      \vspace{-21pt}
+      \resumeItemListStart
+        \resumeItem{\textbf{NVIDIA GTC 2024} (San Francisco): Poster presentation on aggrag framework for RAG experimentation}
+        \resumeItem{\textbf{AWS ML/AI Educational Content}: Created 9 lecture videos on ML/AI for Fortune 500 executive audience}
+        \resumeItem{\textbf{EulerSwap Research Paper}: Contributed to research on novel AMM protocol design (2023)}
+        \resumeItem{\textbf{AI Evaluation Coursework}: Advanced training by Hamel Husain on LLM evaluation methodologies}
+        \resumeItem{\textbf{Top Rated Freelancer on Upwork}: \$250K+ earnings, 20+ five-star reviews}
+        \resumeItem{\textbf{Institute of Actuaries Recognition}: Acknowledged for innovative application of actuarial methods to algorithmic trading}
+        \resumeItem{\textbf{Mentorship}: Guided 2 analysts who progressed to senior roles at major institutions}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}

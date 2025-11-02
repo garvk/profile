@@ -1,0 +1,261 @@
+%-------------------------
+% Resume in Latex
+% Author : Garv Khurana
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage{graphicx}
+\usepackage{microtype}
+\usepackage{mathptmx}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\definecolor{terracotta}{RGB}{204,85,0}
+
+% \usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+\usepackage[colorlinks=true, linkcolor=terracotta, urlcolor=terracotta]{hyperref}
+
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{soul} % For letter spacing
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% % Custom commands
+% \newcommand{\resumeItem}[1]{
+%   \item\small{
+%     {#1 \vspace{-2pt}}
+%   }
+% }
+
+% \newcommand{\resumeItem}[1]{
+%   \item\small\sffamily\mdseries{
+%     {#1 \vspace{-2pt}}
+%   }
+% }
+
+\newcommand{\resumeItem}[1]{
+  \item\small\rmfamily{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+
+\newcommand{\resumeSubheading}[5]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1}\normalfont{#2} & \textit{\small#3} \\
+      \textit{\small#4} & \textit{\small #5} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+% \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\scalebox{0.3}{$\bullet$}}}$}
+
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.21in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+% \newcommand{\resumeItemListStart}{\begin{itemize}[label={\tiny$\bullet$}]}
+\newcommand{\resumeItemListStart}{\begin{itemize}[label={\scalebox{0.3}{$\bullet$}}]}
+
+% \newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \Large \scshape \textls[512]{Garv Khurana} \\ \vspace{1pt}
+    \footnotesize Researcher $|$ Creator $|$ Original \\ \vspace{4pt}
+    \small\href{https://garvkhurana.tech}{Website} $|$ 
+    \href{https://linkedin.com/in/garvkhurana}{Linkedin} $|$
+    \href{https://github.com/garvk}{Github}
+\end{center}
+
+
+%-----------ACADEMIC EXPERIENCE-----------
+\section{Academic Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Student Actuary}{}{2013 -- 2019}
+      {Institute And Faculty of Actuaries \textit{and} Institute of Actuaries of India}{UK \& India}
+      \resumeItemListStart
+        \resumeItem{Cleared CT Series; Traditionally actuaries use scientific methods to study risk in Insurance and Pension programs}
+      \resumeItemListEnd
+      
+  \resumeSubHeadingListEnd
+  
+  \vspace{-15pt}
+  \hspace{0.15in}\rule{\dimexpr\textwidth-0.15in\relax}{0.4pt}
+  \vspace{-21pt}
+  
+  
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Executive Program in Algorithmic Trading}{, Quantinsti}{2016}
+      {Foundation course, CPD accredited, for algorithmic trading domain (6 months)}{India}
+      \resumeItemListStart
+        \resumeItem{Exemplified the use of actuarial methods in a domain outside their traditional areas}
+        \resumeItem{Recognised by leaders of the actuarial profession to inspire the next generation of actuaries}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  
+  \vspace{-15pt}
+  \hspace{0.15in}\rule{\dimexpr\textwidth-0.15in\relax}{0.4pt}
+  \vspace{-21pt}
+  
+  
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Automobile Engineering}{}{2009 -- 2013}
+      {Manipal University}{India}
+      \resumeItemListStart
+        \resumeItem{Founding member of the student collective research project, SolarMobil Manipal, to fabricate a solar race car; 4 cars have been designed and launched since 2011}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROFESSIONAL EXPERIENCE-----------
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Founder}{, Techmendous Inc.}{2018 -- 2023}
+      {A finance and technology company that drives returns-based investment decisions in real time}{Virtual Office - Global}
+      \resumeItemListStart
+        \resumeItem{Created a proprietary autonomous quantitative trading software; helped generate revenues of US\$500K+; product recognised by Institute and Actuaries of India and Quantinsti}
+        \resumeItem{Worked directly with clients to understand their trading requirements; reprogrammed and deployed customised solutions as per their business models; on an average improved the returns by 18\%}
+        \resumeItem{Bootstrapped the entire business by undertaking complex tasks such as programming, statistical simulations, building a team and managing investor relationships; within 6 months, expanded the team to 4 members and 2 clients}
+        \resumeItem{Brought the first crypto trading bot in the Indian market; product had over 100 subscriptions within the first month of operation}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  
+  \vspace{-15pt}
+  \hspace{0.15in}\rule{\dimexpr\textwidth-0.15in\relax}{0.4pt}
+  \vspace{-21pt}
+  
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Actuarial Executive}{, RSA Insurance Group}{2014 -- 2015}{}{}
+      \vspace{-18pt}
+    \resumeSubheading
+      {Actuarial Analyst}{, RSA Insurance Group}{2015 -- 2017}
+      {\textit{Legacy group of 300 year old insurance business, with \$8.5bn in pension liabilities}} {\hfill \textit{Delhi/London}}
+    \resumeItemListStart
+      \resumeItem{Trained a team of 8 experienced analysts to create models in quantitative modelling software; revamped the technical training of new hires by improving on the design of the existing material}
+      \resumeItem{Helped improve the forecasting of the impact of rare events such as the bankruptcy of Lehman Brothers; helped diversify systematic risk and diversifiable risk, bring in \$200+ million in value}
+      \resumeItem{Repeatedly recognised for communicating complex concepts flawlessly in quarterly sign-off meetings attended by investment and actuarial leadership}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  
+  \vspace{-15pt}
+  \hspace{0.15in}\rule{\dimexpr\textwidth-0.15in\relax}{0.4pt}
+  \vspace{-21pt}
+
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Risk Analyst}{, Essex Lake Group}{2014}
+      {Profit enhancement consulting company with \$42M annual revenue, founded by Wharton alumni}{Delhi}
+      \resumeItemListStart
+        \resumeItem{Led a team to top 6 in corporate case challenge at Indian School of Business for formulating a 5-year roadmap for Indian government; The competition was judged by a panel of advisors in Narendra Modi's government}
+        \resumeItem{Awarded, for an unexpected top performance in helping the team acquire a strategic consulting project, an exclusive 3-day brainstorming excursion with CEO, Peter Cummins within first 3 months}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  
+  \vspace{-15pt}
+  \hspace{0.15in}\rule{\dimexpr\textwidth-0.15in\relax}{0.4pt}
+  \vspace{-21pt}
+
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Advisor}{, Family Business}{2013 -- Present}
+      {55-year old joint-family businesses in the automotive and garment industries}{Delhi}
+      \resumeItemListStart
+        \resumeItem{Matched fixed asset returns with future-liabilities to annually save 6\% on borrowed capital; A direct application of asset-liability matching methodology learnt at RSA}
+        \resumeItem{Engaged in a clean exit from garment manufacturing, finding alternate jobs for all of 55 employees}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------ADDITIONAL EXPERIENCE-----------
+\section{Additional Experience}
+ \resumeSubHeadingListStart
+    \resumeSubheading
+      {}{}{}
+      {}{}
+      \vspace{-21pt}
+      \resumeItemListStart
+        \resumeItem{
+        Learn about human psychology and social systems of the world through immersive experiences, such as: travelled to 10 countries; lived in 8 cities across the world; attended landmark forum; reading science backed material; advisor to PhD candidate forecasting policy impact
+      }
+      \resumeItem{
+        Established a network to give older generation access to news from wider lens; created a bot that transfers verified news from Instagram and Twitter to 100+ Whatsapp groups
+      }
+      \resumeItem{
+        Mentor to actuarial students under the supervision of Institute of Actuaries of India; help the students become employable
+      }
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
