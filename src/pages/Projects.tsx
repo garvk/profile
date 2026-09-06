@@ -1,6 +1,26 @@
 const Projects = () => {
   const projects = [
     {
+      title: "searchin5",
+      year: "2026-present",
+      status: "active",
+      role: "product & engineering",
+      description: "a working example of my website search expertise: unified ai search and answers for ecommerce. a lightweight embedded widget helps shoppers search products and collections, track orders, understand store policies, compare reviews, and ask product or sizing questions.",
+      tags: ["ai/ml", "ecommerce", "search", "saas"],
+      link: "https://search.in5.app",
+    },
+    {
+      title: "potd.life",
+      year: "2026-present",
+      status: "active",
+      role: "product & engineering",
+      description: "household-aware food discovery and decision support. combines semantic search with hard dietary constraints, preference-aware ranking, and private per-household daily feedback. public access is currently blocked.",
+      tags: ["search", "recommendation systems", "typesense", "postgresql"],
+      link: null,
+      referenceLink: "https://potd.in5.app",
+      accessLink: "https://wa.me/919810641489?text=Hi%20Garv%2C%20I%27d%20like%20to%20request%20access%20to%20potd.life.",
+    },
+    {
       title: "cogentiq",
       year: "2024-present",
       status: "active",
@@ -16,16 +36,16 @@ const Projects = () => {
       role: "author",
       description: "framework to configure, run, compare, and deploy multiple rag pipelines in a unified experiment-to-production stack.",
       tags: ["rag", "ai/ml", "python", "open source"],
-      link: "null",
+      link: null,
     },
     {
-      title: "underwriting risk (private to fractal)",
+      title: "cogentiq underwriting",
       year: "2024-present",
       status: "active",
       role: "lead tech & product",
-      description: "vertical solution built on cogentiq for automated underwriting risk assessment. ai-powered risk analysis and integration with existing systems.",
+      description: "ai-powered underwriting risk assessment built on cogentiq. leading product and technical integration into large insurance providers across the us and north america.",
       tags: ["ai/ml", "risk", "enterprise"],
-      link: null,
+      link: "https://fractal.ai/products/cogentiq-underwriting/",
     },
     {
       title: "insightsin5",
@@ -125,8 +145,8 @@ const Projects = () => {
       <section>
         <h1 className="text-2xl font-semibold mb-4">work</h1>
         <p className="text-sm text-muted-foreground max-w-2xl">
-          selected projects spanning defi protocol design, ai systems architecture, 
-          risk management frameworks, and algorithmic trading.
+          selected projects spanning ai products, search and recommendation systems,
+          defi protocol design, risk management frameworks, and algorithmic trading.
         </p>
       </section>
 
@@ -138,13 +158,16 @@ const Projects = () => {
             <span className="text-foreground">ai & multi-agent systems:</span> enterprise ai platforms, multi-agent orchestration, evaluation frameworks, automation
           </p>
           <p>
+            <span className="text-foreground">search & recommendation systems:</span> ecommerce search, semantic retrieval, constraint-aware ranking, embedded product experiences
+          </p>
+          <p>
             <span className="text-foreground">defi & blockchain:</span> risk management frameworks, oracle implementations, protocol design, security analysis, cost of attack analysis, uniswapv3 simulations
           </p>
           <p>
             <span className="text-foreground">actuarial science:</span> risk modeling, asset-liability modelling, pensions liability modelling, probability theory, statistical modeling
           </p>
           <p>
-            <span className="text-foreground">software development:</span> full-stack development, python & javascript, algorithmic trading software, social commerce webapps
+            <span className="text-foreground">software development:</span> full-stack product engineering, python, typescript & javascript, react, postgres, typesense, algorithmic trading software
           </p>
         </div>
       </section>
@@ -228,6 +251,22 @@ const Projects = () => {
               {project.collaborator && (
                 <p className="text-xs text-muted-foreground mb-3">
                   collaborator: {project.collaborator}
+                </p>
+              )}
+
+              {project.referenceLink && (
+                <p className="text-xs text-muted-foreground mb-4">
+                  <a href={project.referenceLink} target="_blank" rel="noopener noreferrer" className="underline hover:text-foreground transition-colors">
+                    reference
+                  </a>
+                  {project.accessLink && (
+                    <>
+                      <span className="mx-2">·</span>
+                      <a href={project.accessLink} target="_blank" rel="noopener noreferrer" className="underline hover:text-foreground transition-colors">
+                        request access on whatsapp
+                      </a>
+                    </>
+                  )}
                 </p>
               )}
 

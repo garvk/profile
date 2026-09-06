@@ -13,16 +13,44 @@ const Now = () => {
           <h2 className="text-xs text-muted-foreground mb-4">building</h2>
           <div className="space-y-4 text-sm">
             <div>
-              <div className="font-medium mb-1">cogentiq</div>
+              <div className="font-medium mb-1">
+                <a href="https://search.in5.app" target="_blank" rel="noopener noreferrer" className="underline">searchin5</a>
+              </div>
+              <p className="text-muted-foreground">
+                building a unified ecommerce search experience that answers questions across products,
+                orders, store policies, reviews, sizing, and collections through a lightweight embedded widget.
+              </p>
+            </div>
+            <div>
+              <div className="font-medium mb-1">potd.life</div>
+              <p className="text-muted-foreground">
+                building household-aware food search and decision support with semantic retrieval,
+                explicit constraints, preference-aware ranking, and privacy-conscious daily signals. public access is blocked;{" "}
+                <a
+                  href="https://wa.me/919810641489?text=Hi%20Garv%2C%20I%27d%20like%20to%20request%20access%20to%20potd.life."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-foreground underline"
+                >
+                  request access on whatsapp
+                </a>.
+              </p>
+            </div>
+            <div>
+              <div className="font-medium mb-1">
+                <a href="https://fractal.ai/products/cogentiq/" target="_blank" rel="noopener noreferrer" className="underline">cogentiq</a>
+              </div>
               <p className="text-muted-foreground">
                 developed multi-agentic system where ai agents can be configured for business intelligence workflows.
               </p>
             </div>
             <div>
-              <div className="font-medium mb-1">underwriting risk platform</div>
+              <div className="font-medium mb-1">
+                <a href="https://fractal.ai/products/cogentiq-underwriting/" target="_blank" rel="noopener noreferrer" className="underline">cogentiq underwriting</a>
+              </div>
               <p className="text-muted-foreground">
-                building automated underwriting risk analysis agents combining traditional 
-                actuarial models with ml. working on implementing the solution using deep agents architecture, including chat/agent mode, file tools, mcp tools etc.
+                integrating automated underwriting risk analysis into large insurance providers across the us and north america,
+                combining actuarial models with ml and deep-agent architecture.
               </p>
             </div>
             <div>
@@ -69,7 +97,7 @@ const Now = () => {
             defi risk analysis, ai system design, and technical advisory roles.
           </p>
           <p className="text-xs text-muted-foreground">
-            last updated: march 2025
+            last updated: september 2026
           </p>
         </article>
       </section>

@@ -43,6 +43,11 @@ const Journey = () => {
       description: "took on role as lead architect at fractal.ai, leading the development of novel products using generative ai models. building cogentiq multi-agentic platform, underwriting risk product, and aggrag rag framework.",
     },
     {
+      year: "2026-present",
+      title: "building focused ai products",
+      description: "building searchin5, a unified search and answer experience for ecommerce, and potd.life, a household-aware food discovery and decision system. working hands-on across product design, search architecture, data provenance, frontend, backend, and deployment.",
+    },
+    {
       year: "present",
       title: "looking ahead",
       description: (

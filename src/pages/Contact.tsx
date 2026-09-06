@@ -32,6 +32,23 @@ const Contact = () => {
               projects@garvkhurana.tech
             </a>
           </div>
+
+          <div>
+            <div className="text-xs text-muted-foreground mb-1">phone & whatsapp</div>
+            <div className="flex flex-wrap gap-x-4 gap-y-1 text-sm">
+              <a href="tel:+919810641489" className="hover:opacity-60 transition-opacity underline">
+                +91 98106 41489
+              </a>
+              <a
+                href="https://wa.me/919810641489?text=Hi%20Garv%2C%20I%20found%20you%20through%20your%20website."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:opacity-60 transition-opacity underline"
+              >
+                open whatsapp
+              </a>
+            </div>
+          </div>
           
           <div>
             <div className="text-xs text-muted-foreground mb-1">professional network</div>
@@ -98,7 +115,10 @@ const Contact = () => {
         <div className="space-y-3">
           <div className="text-xs text-muted-foreground">current role</div>
           <div className="space-y-2">
-            <p className="text-sm">lead architect at fractal.ai</p>
+            <p className="text-sm">
+              lead architect at{" "}
+              <a href="https://fractal.ai/" target="_blank" rel="noopener noreferrer" className="underline">fractal.ai</a>
+            </p>
             <p className="text-sm text-muted-foreground">building multi-agentic platforms for enterprise ai solutions</p>
           </div>
         </div>
@@ -109,7 +129,10 @@ const Contact = () => {
         <div className="space-y-3">
           <div className="text-xs text-muted-foreground">passion project</div>
           <div className="space-y-2">
-            <p className="text-sm">in5 labs (formerly techmendous)</p>
+            <p className="text-sm">
+              <a href="https://in5yourideas.com/" target="_blank" rel="noopener noreferrer" className="underline">in5 labs</a>{" "}
+              (formerly techmendous)
+            </p>
             <p className="text-sm text-muted-foreground">invention laboratory focused on commercializing academic research</p>
           </div>
         </div>
@@ -120,6 +143,13 @@ const Contact = () => {
         <div className="space-y-4">
           <div className="text-xs text-muted-foreground">collaboration areas</div>
           <ul className="space-y-2">
+            <li className="flex gap-3">
+              <span className="text-muted-foreground">•</span>
+              <span className="text-sm">
+                website search experience design & engineering —{" "}
+                <a href="https://search.in5.app" target="_blank" rel="noopener noreferrer" className="underline">view searchin5</a>
+              </span>
+            </li>
             <li className="flex gap-3">
               <span className="text-muted-foreground">•</span>
               <span className="text-sm">defi protocol design & risk management</span>

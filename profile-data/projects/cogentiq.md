@@ -29,11 +29,9 @@ A comprehensive multi-agentic AI platform that enables enterprises to build, dep
 - Enterprise integration frameworks
 - Cloud-native architecture
 
-## Access
+## Reference
 
-Try cogentiq at: [cogentiq.fractal.ai](https://cogentiq.fractal.ai/)
-
-Learn more: [Fractal.ai Products](https://fractal.ai/products/cogentiq/)
+Learn more: [Cogentiq by Fractal](https://fractal.ai/products/cogentiq/)
 
 ## Impact
 

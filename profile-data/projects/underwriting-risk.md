@@ -2,7 +2,7 @@
 
 ## Overview
 
-A vertical solution built on cogentiq platform for automated underwriting risk assessment.
+A vertical solution built on the cogentiq platform for automated underwriting risk assessment, currently being integrated into large insurance providers across the US and North America.
 
 ## Status
 🟢 **Active** - Production
@@ -13,6 +13,8 @@ A vertical solution built on cogentiq platform for automated underwriting risk a
 ## Description
 
 An enterprise-grade underwriting risk assessment solution that leverages AI and multi-agent systems to automate and identify risk during the underwriting process. Built as a vertical solution on top of the [cogentiq platform](./cogentiq.md).
+
+[Learn more about Cogentiq Underwriting](https://fractal.ai/products/cogentiq-underwriting/).
 
 ## Key Features
 
@@ -39,6 +41,7 @@ As Lead Tech and Product Owner:
 - Stakeholder management
 - Team leadership
 - Integration with cogentiq platform
+- Technical and product integration into large insurance providers across the US and North America
 
 ## Impact
 

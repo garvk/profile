@@ -32,8 +32,8 @@
 
 ### Current Activities
 1. **insightsin5** - Building AI assistant to derive business insights for Shopify store owners. Request demo 
-2. **cogentiq** - Lead Architect at building Fractal's [multi agentic platform](https://fractal.ai/products/cogentiq/). Try here: [cogentiq.fractal.ai](https://cogentiq.fractal.ai/)
-3. **Underwriting Risk Product** - Lead tech and product owner of a vertical solution built on cogentiq (Fractal.ai)
+2. **cogentiq** - Lead Architect building Fractal's [multi-agent platform](https://fractal.ai/products/cogentiq/)
+3. **[Cogentiq Underwriting](https://fractal.ai/products/cogentiq-underwriting/)** - Lead tech and product owner, integrating the solution into large insurance providers across the US and North America
 4. **Named Entity Recognition from news articles**: Leveraging LLMs/RAG to measure improvement against ML baseline models
 5. **aggrag**★★★: Authored a framework to configure, run, compare, and deploy multiple RAG (retrieval-augmented generation) pipelines in a unified experiment-to-production stack. 
 
